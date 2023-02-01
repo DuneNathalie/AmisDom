@@ -1,13 +1,25 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+:root {
+  --vert: rgba(212, 234, 225, 1);
+  --violet: rgba(151, 73, 107, 1);
+  --roseFonce: rgba(216, 89, 135, 1);
+  --rosePale: rgba(237, 157, 187, 1);
+  --roseClaire: rgba(245, 214, 223, 1);
+  --jauneVert: rgba(233, 237, 213, 1);
+  --title: 3vw;
+  --h2: 2vw;
+  --p: 1vw;
+  --police: "Poppins", sans-serif;
+  --borderRadius: 10px;
+  --boxShadow: 0px 5px 10px 0px rgb(0 0 0/ 51%);
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--police);
 }

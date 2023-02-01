@@ -1,0 +1,29 @@
+.bandeau {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 300px;
+}
+.vecto {
+    border-radius: 50%;
+    box-shadow: var(--boxShadow);
+    width: 100px;
+}
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.letout {
+    background-color: white;
+    height: 100%;
+    width: 250px;
+}
+.amis {
+    color:  var(--roseFonce);
+    font-family: var(--police);
+    font-size: 4vh;
+    text-align: center;
+}
