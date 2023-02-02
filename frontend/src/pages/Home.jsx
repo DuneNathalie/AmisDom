@@ -45,8 +45,10 @@ useEffect(() => {
             </div>
         <div className="leTout">
                 <div className="cadre">
-                    <div className="titre">TROUVE TON AmisDOm</div>
+                    <div className="titre">Trouve ton AmisDOm</div>
+                    <div className="filtre">
                     <Search datas={type} handleSearchTerm= {handleSearchTerm} />
+                    </div>
                 </div>
                     <div className='toCarte'>
                         {cardAnimaux

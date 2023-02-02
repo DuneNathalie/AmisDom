@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import axios from "axios";
 import "../styles/Search.css";
 
 const Search = ({datas, handleSearchTerm}) => {
@@ -8,10 +7,10 @@ const Search = ({datas, handleSearchTerm}) => {
         <div>
         <div className='search'>
             <select onChange={handleSearchTerm}>
-                <option value="">selection</option>
+                <option value="">Type d'AmisDom</option>
        
             {datas.map((post) =>{
-                return <option value={post.type} className='search_result'key={post.id}>
+                return <option value={post.type} className='search_type'key={post.id}>
                     {post.type}</option>
 
 })}

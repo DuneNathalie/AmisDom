@@ -1,12 +1,16 @@
+.search {
+    width: 100%;
+
+}
+
 .searchBar {
     padding: 2rem 1rem;
 }
 
-.searchBar input {
-    font-size: 1.2rem;
-}
-
-.search_result {
-    text-align: center;
-    font-size: 2vh;
+select {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--boxShadow);
 }

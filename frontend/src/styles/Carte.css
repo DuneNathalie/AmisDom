@@ -29,6 +29,7 @@
     border-radius: 50%;
     box-shadow: var(--boxShadow);
     font-size: 5vh;
+    margin-top: 2vh;
 }
 
 .descri {
@@ -52,9 +53,8 @@
 }
 
 .adopte {
-    width: 80px;
-    height: 40px;
-    margin-top: 5px;
+    width: 100px;
+    height: 45px;
     border-radius: 5px;
     border: none;
     background-color: rgba(255, 215, 215, 1);

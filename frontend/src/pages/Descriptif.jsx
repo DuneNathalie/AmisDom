@@ -2,6 +2,7 @@ import React, { useState,  useEffect} from "react";
 import {useParams} from 'react-router-dom'
 import axios from "axios";
 import Bandeau from "../components/Bandeau.jsx";
+import "../styles/Descriptif.css";
 
 const Descriptif = () => {
 const [descrip, setDescrip] = useState([]);
@@ -20,7 +21,7 @@ const {id} = useParams() ;
 
     return (
         <div className='descriptif'>
-            <div className='bande'>
+            <div className="bando">
             <Bandeau />
             </div>
             <div className='presentation'>
@@ -32,7 +33,7 @@ const {id} = useParams() ;
                 .map((val) => {
                     return (
                 <div className='tofNom' key={val.id}>
-                    <img className="pin" src={`http://localhost:5005/${val.image}`} alt="lapin"/>
+                    <img className="pin" src={`http://localhost:5005/${val.image}`} alt="pin"/>
                         <div className='info'>
                         <div className="name">{val.name}</div>
                         <div className="gabarit">{val.gabarit}</div>
