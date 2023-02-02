@@ -37,10 +37,6 @@
     width: 350px;
 }
 
-.name {
-    font-size: 4vh;
-}
-
 .info {
     display: flex;
     justify-content: center;
