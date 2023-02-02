@@ -6,6 +6,10 @@ const getAllanimaux = async (req, res) => {
   return res.status(200).send(result);
 };
 
+const getAllType = async (req, res) => {
+  const [result] = await db.query("SELECT DISTINCT type FROM animaux");
+  return res.status(200).send(result);
+};
 // Get animaux by id
 /*
 const getByIdanimaux = async (req, res) => {
@@ -37,4 +41,5 @@ const getByIdanimaux = (req, res) => {
 module.exports = {
   getAllanimaux,
   getByIdanimaux,
+  getAllType,
 };

@@ -8,6 +8,7 @@ const animauxController = require("./controllers/AnimauxController")
 
 router.get("/", animauxController.getAllanimaux);
 router.get("/:id", animauxController.getByIdanimaux);
+router.get("/type", animauxController.getAllType);
 //router.post("/", animauxController.createAnimaux);
 //router.put("/:id", animauxController.updateAnimaux);
 //router.delete("/:id", animauxController.deleteAnimaux);
