@@ -1,80 +1,75 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,  useEffect} from "react";
 import Bandeau from "../components/Bandeau.jsx";
+import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
-//import axios from "axios";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
 const Home = () => {
+const [cardAnimaux, setCardAnimaux] = useState([]);
+const [searchType, setSearchType] = useState("");
+const [type, setType] = useState([]);
 
-   // const [cardAnimaux, setCardAnimaux] = useState([]);
-    
-//const cardanimaux = () => {
-    //axios
-   // .get(`http://localhost:${import.meta.env.VITE_PORT_BACK}/animaux`)
-   // .then((res) => {
-    //  setCardAnimaux(res.data);
-   // })
-   // .catch((err) => {
-     // console.error(err);
-   // });
-//};
+const handleSearchTerm = (e) => {
+    setSearchType(e.target.value)
+ };
 
-//useEffect(() => {
-//  cardanimaux();
-//}, []);
+const getType = () => {
+    axios
+   .get(`http://localhost:5005/animal/type/type`)
+   .then((res) => {
+    setType(res.data);
+   })
+   .catch((err) => {
+     console.error(err);
+  });
+}
+
+useEffect(() => {
+   axios
+   .get(`http://localhost:5005/animal`)
+   .then((res) => {
+    setCardAnimaux(res.data);
+   })
+   .catch((err) => {
+     console.error(err);
+  }); getType()
+}, []);
+
 
     return (
         <div className='home'>
             <div className="bando">
             <Bandeau />
             </div>
-            <div className="leTout">
+        <div className="leTout">
                 <div className="cadre">
-            <div className="titre">TROUVE TON AMISDOM</div>
-            <div className="filtre">filtre</div>
-            </div>
-           <div className='touteCarte'>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Descriptif" className="Link" >
-                    <Carte />
-                </Link>
-                <Link to="/Description" className="Link" >
-                    <Carte />
-                </Link>
-            </div>
-            </div>
+                    <div className="titre">TROUVE TON AmisDOm</div>
+                    <Search datas={type} handleSearchTerm= {handleSearchTerm} />
+                </div>
+                    <div className='toCarte'>
+                        {cardAnimaux
+                        .filter((el) => {
+                            if (searchType === "")
+                            return true;
+                            if (searchType === el.type)
+                            return true;
+                        }
+                            
+                        )
+                        .map((val) => {
+                            return (
+                                <Link to={`/Descriptif/${val.id_animaux}`} className="Link"key={val.id_animaux} >
+                                
+                                    <Carte profil={val}/>
+                                    </Link>
+                                    );
+                        })}         
+                    </div>
         </div>
-    );
-};
+        </div>
+        )}
+
 
 export default Home;

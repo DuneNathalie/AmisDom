@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 180px;
     height: 230px;
     border-top-left-radius: 45%;
@@ -26,7 +27,8 @@
 .tete {
     width: 120px;
     border-radius: 50%;
-    box-shadow: 0px 5px 10px 0px rgba(216, 89, 135, 1);
+    box-shadow: var(--boxShadow);
+    font-size: 5vh;
 }
 
 .descri {
@@ -47,4 +49,17 @@
 .age {
     font-size: 2vh;
     font-weight: 700;
+}
+
+.adopte {
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 215, 215, 1);
+    box-shadow: var(--boxShadow);
+    color: white;
+    font-weight: bolder;
+    font-size: 2vh;
 }
