@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `AmisDom`.`animaux` (
 
   INSERT INTO animaux (type, name, gabarit, age, descriptif, image) VALUES
   ("Chat", "Kiki", "moyen", "5", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.kiki.jpg"),
-  ("Chat", "Neige", "moyen", "10", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.neige.velour.jpg"),
+  ("Chat", "Neige", "moyen", "10", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.neige.jpg"),
   ("Chat", "Perle", "moyen", "7", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.perle.jpg"),
   ("Chat", "Ronron", "moyen", "2", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.ronron.jpg"),
   ("Chien", "Charmeur", "grand", "8", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chien.charmeur.jpg"),

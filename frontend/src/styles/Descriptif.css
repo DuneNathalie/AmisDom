@@ -1,6 +1,6 @@
 .descriptif {
     display: flex;
-    background-color: darkgreen;
+    background-color: var(--vert);
     
 }
 .qui {

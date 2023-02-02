@@ -2,15 +2,15 @@ const express = require("express");
 
 const router = express.Router();
 
-// Import des controllers :
-
-const animauxController = require("./controllers/VehicleController");
+const animauxController = require("./controllers/AnimauxController")
 
 // Route pour récupérer tous les animaux
 
-router.get("/animaux", animauxController.getAllAnimaux);
-
-router.get("/animaux/:id", animauxController.getAnimauxById);
+router.get("/", animauxController.getAllanimaux);
+router.get("/:id", animauxController.getByIdanimaux);
+//router.post("/", animauxController.createAnimaux);
+//router.put("/:id", animauxController.updateAnimaux);
+//router.delete("/:id", animauxController.deleteAnimaux);
 
 
 module.exports = router;

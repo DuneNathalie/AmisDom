@@ -1,22 +1,25 @@
-const AnimauxModel = require("../models/AnimauxModel");
+const AnimauxModels = require("../models/AnimauxModels");
+const db = require("../datasource");
 
-const getAllAnimaux = (req, res) => {
-  AnimauxModel.findAll()
-    .then(([animaux]) => {
-      res.status(200).send(vehicles);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.status(500).send("Internal server error");
-    });
+const getAllanimaux = async (req, res) => {
+  const [result] = await db.query("SELECT * FROM animaux");
+  return res.status(200).send(result);
 };
 
-// Get vehicles by id
+// Get animaux by id
+/*
+const getByIdanimaux = async (req, res) => {
+  const [result] = await db.query(
+    "SELECT * FROM animaux WHERE id_animaux = ?",
+    [req.params.id]
+  );
+  return res.status(200).send(result);
+};*/
 
-const getAnimauxById = (req, res) => {
+const getByIdanimaux = (req, res) => {
   const id = parseInt(req.params.id, 10);
 
-  AnimauxModel.findAnimauxById(id)
+  AnimauxModels.getByIdanimaux(id)
     .then(([animaux]) => {
       if (animaux[0] != null) {
         res.status(200).send(animaux);
@@ -30,7 +33,8 @@ const getAnimauxById = (req, res) => {
     });
 };
 
+
 module.exports = {
-  getAllAnimaux,
-  getAnimauxById,
+  getAllanimaux,
+  getByIdanimaux,
 };

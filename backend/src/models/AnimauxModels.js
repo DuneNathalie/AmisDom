@@ -1,19 +1,30 @@
-const db = require("../connection");
+const datasource = require("../datasource");
+const anim = "animaux";
 
-const typeAnim = "animaux";
+const getAllanimaux = () => {
+  return datasource.query (`SELECT * FROM ${anim}`);
+}
 
-// Requête pour récupérer tous les véhicules
+const getByIdanimaux = (id) => {
+  return datasource.query (`SELECT * FROM ${anim} WHERE id_animaux=?`, [id]);
+}
 
-const findAll = () => {
-  return db.query(`SELECT * FROM ${typeAnim}`);
-};
+/*const createAnimaux = () => {
+  return datasource.query ("INSERT INTO ${anim} (type, name, gabarit, age, descriptif, image) VALUE (? ,? ,? ,?, ?, ?), [type, name, gabarit, age, description, image]");
+}
 
-// Requête pour trouver un animal selon son id
-const findVehicleById = (id) => {
-  return db.query(`SELECT * FROM ${typeAnim} WHERE id_vehicle=?`, [id]);
-};
+const updateAnimaux = () => {
+  return datasource.query ("UPDATE ${anim} SET type=?, name=?, gabarit=?, age=?, descriptif=?, image=?, animauxId=?, WHERE id=?", [type, name, gabarit, age, descriptif, image, animauxId, id]);
+}
+
+const deleteAnimaux = () => {
+  return datasource.query ("DELETE FROM ${anim} WHERE id=?", [id]);
+}*/
 
 module.exports = {
-  findAll,
-  findVehicleById,
-};
+  getAllanimaux,
+  getByIdanimaux,
+  /*createAnimaux,
+  updateAnimaux,
+  deleteAnimaux,*/
+}

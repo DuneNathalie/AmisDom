@@ -26,11 +26,52 @@ const Home = () => {
 
     return (
         <div className='home'>
+            <div className="bando">
             <Bandeau />
-            <Carte />
+            </div>
+            <div className="leTout">
+                <div className="cadre">
+            <div className="titre">TROUVE TON AMISDOM</div>
+            <div className="filtre">filtre</div>
+            </div>
            <div className='touteCarte'>
-                <Link to="/description" >
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
                 </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Descriptif" className="Link" >
+                    <Carte />
+                </Link>
+                <Link to="/Description" className="Link" >
+                    <Carte />
+                </Link>
+            </div>
             </div>
         </div>
     );

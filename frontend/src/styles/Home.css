@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    background-color:var(--vert);
+
+}
+.bando {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: 0;
+
+}
+.leTout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 5vh;
+}
+.cadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titre {
+    color: var(--violet);
+    font-weight: bold;
+}
+
+.filtre {
+
+}
+.touteCarte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    gap: 18px
+}

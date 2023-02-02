@@ -9,20 +9,20 @@ const bandeau = () => {
     return (
         <div className='letout'>
             <div className='amis'>
-                <p>NOS AmisDom à Adopter</p>
+                <p>Nos AmisDom <br></br> à Adopter</p>
             </div>
         <div className='bandeau'>
             <div className='type'>
             <img className='vecto' src={chien} alt="chien" />
-            <p>Chien</p>
-            </div>
-            <div className='type'>
-            <img className='vecto' src={chat} alt="chat" />
             <p>Chat</p>
             </div>
             <div className='type'>
-            <img className='vecto' src={lapin} alt="lapin" />
+            <img className='vecto' src={chat} alt="chat" />
             <p>Lapin</p>
+            </div>
+            <div className='type'>
+            <img className='vecto' src={lapin} alt="lapin" />
+            <p>Chien</p>
             </div>
             <div className='type'>
             <img className='vecto' src={hamster} alt="hamster" />
