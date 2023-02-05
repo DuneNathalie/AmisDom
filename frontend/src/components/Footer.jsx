@@ -23,7 +23,7 @@ function Footer() {
                 </Link>
             </div>
 
-            <div className='name'>
+            <div className='nameNath'>
                 <p className='firts'>Nathalie Dune</p>
             </div>
         </footer>

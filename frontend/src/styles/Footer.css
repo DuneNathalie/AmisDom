@@ -1,15 +1,21 @@
 .footer {
+  position: fixe;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 100%;
     height: 60px;
-    background-color: plum;
+    background-color:  rgba(255, 215, 215, 1);;
     color: aliceblue;
-    font-family: var(--polices);
+    font-family: var(--police);
     z-index: 999;
     position: relative;
     margin-bottom: 0;
   }
- 
+
+  .firts {
+    font-size: 1rem;
+    font-family: var(--police);
+    color: white;
+  }

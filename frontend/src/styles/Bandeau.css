@@ -19,9 +19,12 @@
 }
 
 .letout {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
     background-color: white;
     height: 100%;
-    width: 290px;
+    width: 250px;
 }
 .amis {
     color:  var(--roseFonce);

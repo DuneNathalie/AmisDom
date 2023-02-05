@@ -3,16 +3,16 @@
     align-items: center;
     gap: 18px;
     background-color: rgba(255, 215, 215, 1);
-    height: 100px;
+    height: 80px;
     display: flex;
 }
 .lien {
     color: white;
-    font-size: 6vh;
+    font-size: 4vh;
 }
 .logo {
     border-radius: 50%;
-    width: 90px;
+    width: 70px;
 }
 .enc {
     display: flex;

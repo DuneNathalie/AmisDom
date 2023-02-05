@@ -14,23 +14,23 @@ const getAllType = async (req, res) => {
   const [result] = await db.query("SELECT DISTINCT type FROM animaux");
   return res.status(200).send(result);
 };
+const deleteAnimaux = () => {
+  return datasource.query ("DELETE FROM ${anim} WHERE id=?", [id]);
+}
 /*const createAnimaux = () => {
   return datasource.query ("INSERT INTO ${anim} (type, name, gabarit, age, descriptif, image) VALUE (? ,? ,? ,?, ?, ?), [type, name, gabarit, age, description, image]");
-}
+}*/
 
 const updateAnimaux = () => {
   return datasource.query ("UPDATE ${anim} SET type=?, name=?, gabarit=?, age=?, descriptif=?, image=?, animauxId=?, WHERE id=?", [type, name, gabarit, age, descriptif, image, animauxId, id]);
 }
 
-const deleteAnimaux = () => {
-  return datasource.query ("DELETE FROM ${anim} WHERE id=?", [id]);
-}*/
 
 module.exports = {
   getAllanimaux,
   getByIdanimaux,
   getAllType,
-  /*createAnimaux,
+  /*createAnimaux,*/
   updateAnimaux,
-  deleteAnimaux,*/
+  deleteAnimaux,
 }
