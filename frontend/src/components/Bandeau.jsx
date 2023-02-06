@@ -9,8 +9,9 @@ const bandeau = () => {
     return (
         <div className='letout'>
             <div className='amis'>
-                <p>Nos AmisDom <br></br> à Adopter</p>
+                <p>AmisDom <br></br> à Adopter</p>
             </div>
+            <div className='anim'>
             <div className='type'>
             <img className='vecto' src={chien} alt="chien" />
             <p>Chien</p>
@@ -26,6 +27,7 @@ const bandeau = () => {
             <div className='type'>
             <img className='vecto' src={hamster} alt="hamster" />
             <p>Hamster</p>
+            </div>
             </div>
     
         </div>

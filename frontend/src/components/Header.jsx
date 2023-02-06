@@ -7,9 +7,11 @@ const header = () => {
     return (
         <div className='header'>
             <div className='enc'>
-            <img className="logo" src={mimi} alt="logo"/>
             <div className='leLien'>
-            <Link className='lien' to="/">Acceuil</Link>
+            <Link className='liens' to="/">
+            <img className="logo" src={mimi} alt="logo"/>
+                <div className="lien">Acceuil</div>
+            </Link>
             </div>
             </div>
         </div>

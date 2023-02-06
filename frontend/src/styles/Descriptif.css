@@ -14,7 +14,7 @@
 }
 
 .titrePres {
-    font-size: 6vh;
+    font-size: 4vh;
     font-weight: bold;
 }
 .precision{
@@ -25,12 +25,11 @@
     height: 100%;
     width: 80%;
 }
-.info {
+.info{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 0;
-    height: 100%;
+    margin-bottom: 2vh;
 }
 
 .test {
@@ -63,6 +62,7 @@
     margin: auto;
     text-align: justify;
     font-size: 1.3rem;
+    margin-bottom: 0;
 }
 
 .adopte {

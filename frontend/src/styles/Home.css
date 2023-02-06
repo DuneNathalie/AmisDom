@@ -28,7 +28,7 @@
     color:  var(--violet);
     font-family: var(--police);
     font-size: 4vh;
-    margin-top: 2vh;
+    margin-top: 4vh;
 
 }
 
@@ -38,7 +38,9 @@
     align-items: center;
     justify-content: center;
     gap: 4vh;
-    margin: 4% 1.5% 3% 0;
+    margin-right: 1.5%;
+    overflow: scroll;
+    height: 500px;
     /*margin-right: 2vw;*/
 }
 .bar {

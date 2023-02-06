@@ -1,4 +1,6 @@
 .carte {
+    z-index: 2;
+    margin-top: 5vh;
     margin-left: 15%;
     display: flex;
     justify-content: center;
