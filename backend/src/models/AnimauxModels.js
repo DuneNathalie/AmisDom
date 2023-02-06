@@ -14,8 +14,8 @@ const getAllType = async (req, res) => {
   const [result] = await db.query("SELECT DISTINCT type FROM animaux");
   return res.status(200).send(result);
 };
-const deleteAnimaux = () => {
-  return datasource.query ("DELETE FROM ${anim} WHERE id=?", [id]);
+const deleteAnimaux = (id) => {
+  return datasource.query ("DELETE FROM animaux WHERE id_animaux=?", [id]);
 }
 /*const createAnimaux = () => {
   return datasource.query ("INSERT INTO ${anim} (type, name, gabarit, age, descriptif, image) VALUE (? ,? ,? ,?, ?, ?), [type, name, gabarit, age, description, image]");

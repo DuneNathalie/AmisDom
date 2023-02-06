@@ -37,9 +37,21 @@ const getByIdanimaux = (req, res) => {
     });
 };
 
+const deleteAnimaux = async (req, res) => {
+  try{
+      const [result] = await AnimauxModels.deleteAnimaux(req.params.id)
+          if(result.affectedRows > 0){
+              return res.status(201).send(result)
+          }}catch(err){
+              console.error(err)
+              return res.status(500).send("erreur")
+  }
+};
+
 
 module.exports = {
   getAllanimaux,
   getByIdanimaux,
   getAllType,
+  deleteAnimaux,
 };
