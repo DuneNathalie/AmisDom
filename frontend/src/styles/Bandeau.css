@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items:center;
     gap: 10px;
+    height: 100%;
 }
 .vecto {
     border-radius: 50%;
@@ -19,9 +20,11 @@
 }
 
 .letout {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     height: 100%;
-    width: 290px;
+    width: 340px;
 }
 .amis {
     color:  var(--roseFonce);

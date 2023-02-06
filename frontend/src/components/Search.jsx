@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "../styles/Search.css";
 
 const Search = ({datas, handleSearchTerm}) => {
@@ -12,6 +12,7 @@ const Search = ({datas, handleSearchTerm}) => {
             {datas.map((post) =>{
                 return <option value={post.type} className='search_type'key={post.id}>
                     {post.type}</option>
+                    
 
 })}
 </select>
@@ -20,5 +21,4 @@ const Search = ({datas, handleSearchTerm}) => {
     </div>
     );
 };
-
 export default Search;

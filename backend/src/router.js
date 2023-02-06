@@ -9,9 +9,9 @@ const animauxController = require("./controllers/AnimauxController")
 router.get("/", animauxController.getAllanimaux);
 router.get("/:id", animauxController.getByIdanimaux);
 router.get("/type/type", animauxController.getAllType);
+router.delete("/:id", animauxController.deleteAnimaux);
 //router.post("/", animauxController.createAnimaux);
 //router.put("/:id", animauxController.updateAnimaux);
-//router.delete("/:id", animauxController.deleteAnimaux);
 
 
 module.exports = router;

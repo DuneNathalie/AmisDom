@@ -1,15 +1,39 @@
 .footer {
+  position: fixe;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    width: 100%;
     height: 60px;
-    background-color: plum;
+    background-color:  rgba(255, 215, 215, 1);;
     color: aliceblue;
-    font-family: var(--polices);
+    font-family: var(--police);
     z-index: 999;
     position: relative;
     margin-bottom: 0;
+    width: 100%;
   }
- 
+
+  .firts {
+    font-size: 1rem;
+    font-family: var(--police);
+    color:var(--roseFonce)
+  }
+  .coordonnées {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  .logos {
+    color: var(--roseFonce);
+  }
+  .logoBis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px
+  }
