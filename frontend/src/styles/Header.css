@@ -1,18 +1,24 @@
 .header {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 18px;
     background-color: rgba(255, 215, 215, 1);
-    height: 100px;
-    display: flex;
+    height: 80px;
+    width: 100%;
 }
-.lien {
+.liens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    font-size: 6vh;
+    font-size: 4vh;
+    margin-right: 1vw;
+    gap: 1vw;
 }
 .logo {
     border-radius: 50%;
-    width: 90px;
+    width: 70px;
 }
 .enc {
     display: flex;

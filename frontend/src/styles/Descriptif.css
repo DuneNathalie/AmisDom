@@ -1,58 +1,86 @@
-.descriptif {
+.cadreDescriptif {
     display: flex;
-    justify-content: space-between;
-    background-color: var(--vert);
-    
-}
-.qui {
-    font-size: 4vh;
-    text-align: center;
-    font-family: var(--police);
+    justify-content: center;
+    width: 100%;
 }
 
 .presentation {
-    margin: 2% 7% 35% ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3vw 3vw 5vh 3vw;
+    gap: 4vh;
+}
+
+.titrePres {
+    font-size: 4vh;
+    font-weight: bold;
+}
+.precision{
     display: flex;
     flex-direction: column;
-    gap: 8vh;
-}
-
-.tofNom {
-    display: flex;
-   justify-content: center;
-   gap: 5vw;
-   margin-top: 7vh;
-}
-
-.bando {
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
-    margin-top: 0;
-
-}
-.pin{
-    margin-top: 3vh;
-    border-radius: 50%;
-    width: 350px;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: start;
+    margin: auto;
     height: 100%;
-    width: 100%;
-    gap:3vh;
+    width: 80%;
 }
-.text {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: 3vh;
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2vh;
 }
 
 .test {
+    font-size: 4vh;
+    text-align: center;
+    font-family: var(--police);
+    box-shadow: var(--boxShadow);
+    background-color: white;
+    border-radius: 25px;
+}
+.rass {
     display: flex;
-    flex-direction: column;
+    margin: 2vw;
 }
 
+.info .name {
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.pin{
+    border-radius: 25px;
+    width: 360px;
+    box-shadow: var(--boxShadow);
+    margin: auto;
+}
+
+.text {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.adopte {
+    cursor: pointer;
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 215, 215, 1);
+    box-shadow: var(--boxShadow);
+    color: white;
+    font-weight:700;
+    font-size: 3vh;
+    transition: transform 0.3s;
+}
+
+.adopte:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1) 
+}

@@ -1,5 +1,5 @@
 import React, { useState,  useEffect} from "react";
-import Bandeau from "../components/Bandeau.jsx";
+//import Bandeau from "../components/Bandeau.jsx";
 import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
 import axios from "axios";
@@ -40,12 +40,9 @@ useEffect(() => {
 
     return (
         <div className='home'>
-            <div className="bando">
-            <Bandeau />
-            </div>
         <div className="leTout">
                 <div className="cadre">
-                    <div className="titre">Trouve ton AmisDOm</div>
+                    <div className="titre">Trouve ton AmisDom</div>
                     <div className="filtre">
                     <Search datas={type} handleSearchTerm= {handleSearchTerm} />
                     </div>
@@ -57,15 +54,15 @@ useEffect(() => {
                             return true;
                             if (searchType === el.type)
                             return true;
-                        }
-                            
+                        }   
                         )
                         .map((val) => {
                             return (
-                                <Link to={`/Descriptif/${val.id_animaux}`} className="Link"key={val.id_animaux} >
-                                
+                                <div className="bar">
+                                <Link to={`/Descriptif/${val.id_animaux}`} className="link" key={val.id_animaux} >
                                     <Carte profil={val}/>
                                     </Link>
+                                    </div>
                                     );
                         })}         
                     </div>

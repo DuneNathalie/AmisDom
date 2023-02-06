@@ -1,4 +1,6 @@
 .carte {
+    z-index: 2;
+    margin-top: 5vh;
     margin-left: 15%;
     display: flex;
     justify-content: center;
@@ -6,9 +8,9 @@
     flex-direction: column;
     width: 180px;
     height: 230px;
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45%;
-    border-bottom-right-radius: var(--borderRadius);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
     border-bottom-left-radius: var(--borderRadius);
     background-color:white;
     box-shadow: var(--boxShadow);
@@ -25,18 +27,17 @@
     
 }
 .tete {
-    width: 120px;
+    width: 130px;
     border-radius: 50%;
     box-shadow: var(--boxShadow);
     font-size: 5vh;
-    margin-top: 2vh;
 }
 
 .descri {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px
+    gap: 2vh;
 }
 .type {
     font-size: 2vh;
@@ -44,7 +45,7 @@
 
 .name {
     color: var(--rosePale);
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 .age {
@@ -52,14 +53,3 @@
     font-weight: 700;
 }
 
-.adopte {
-    width: 100px;
-    height: 45px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(255, 215, 215, 1);
-    box-shadow: var(--boxShadow);
-    color: white;
-    font-weight: bolder;
-    font-size: 2vh;
-}
