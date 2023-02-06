@@ -4,7 +4,7 @@
     justify-content: flex-end;
     gap: 18px;
     background-color: rgba(255, 215, 215, 1);
-    height: 80px;
+    height: 60px;
     width: 100%;
 }
 .liens {
@@ -18,7 +18,7 @@
 }
 .logo {
     border-radius: 50%;
-    width: 70px;
+    width: 55px;
 }
 .enc {
     display: flex;
