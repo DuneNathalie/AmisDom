@@ -1,8 +1,7 @@
 .cadreDescriptif {
     display: flex;
     justify-content: center;
-    background-color: var(--vert);
-    
+    width: 100%;
 }
 
 .presentation {
@@ -10,7 +9,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3vw 3vw 10vh 3vw;
+    margin: 3vw 3vw 5vh 3vw;
+    gap: 4vh;
 }
 
 .titrePres {

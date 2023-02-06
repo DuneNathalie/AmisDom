@@ -9,7 +9,7 @@ const bandeau = () => {
     return (
         <div className='letout'>
             <div className='amis'>
-                <p>AmisDom <br></br> à Adopter</p>
+                <p>AmisDom à adopter</p>
             </div>
             <div className='anim'>
             <div className='type'>

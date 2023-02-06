@@ -41,7 +41,8 @@
     margin-right: 1.5%;
     overflow: scroll;
     height: 500px;
-    /*margin-right: 2vw;*/
+    margin-top:2.5vh;
+    /*box-shadow: 0px 5px 10px 0px rgba(212, 234, 225, 1);*/
 }
 .bar {
     transition: transform 0.3s;

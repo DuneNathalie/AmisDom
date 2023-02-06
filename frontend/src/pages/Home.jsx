@@ -1,5 +1,5 @@
 import React, { useState,  useEffect} from "react";
-import Bandeau from "../components/Bandeau.jsx";
+//import Bandeau from "../components/Bandeau.jsx";
 import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
 import axios from "axios";
@@ -40,9 +40,6 @@ useEffect(() => {
 
     return (
         <div className='home'>
-            <div className="bando">
-            <Bandeau />
-            </div>
         <div className="leTout">
                 <div className="cadre">
                     <div className="titre">Trouve ton AmisDom</div>

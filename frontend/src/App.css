@@ -25,3 +25,14 @@
   text-decoration: none;
   font-family: var(--police)
 }
+.app {
+  display: flex;
+  background-color: var(--vert);
+}
+.toutHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

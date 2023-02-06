@@ -1,7 +1,7 @@
 import React, { useState,  useEffect} from "react";
 import {useParams} from 'react-router-dom'
 import axios from "axios";
-import Bandeau from "../components/Bandeau.jsx";
+//import Bandeau from "../components/Bandeau.jsx";
 import "../styles/Descriptif.css";
 
 const Descriptif = () => {
@@ -34,9 +34,6 @@ const deleteanimaux = () => {
   };
     return (
         <div className='cadreDescriptif'>
-            <div className="bando">
-            <Bandeau />
-            </div>
             <div className='presentation'>
                 <div className="titrePres">
                     <p>Je te présente</p>
@@ -53,7 +50,6 @@ const deleteanimaux = () => {
                             <div className="precision">
                                 <div className="name">{val.name}</div>
                                 <div className="sexe">{val.sexe}</div>
-                                <div className="type">{val.type}</div>
                                  <div className="age">{val.age} ans</div>
                             </div>
                                 <div className="texte">
