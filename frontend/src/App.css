@@ -28,6 +28,7 @@
 .app {
   display: flex;
   background-color: var(--vert);
+  height: 100%;
 }
 .toutHeader {
   display: flex;
