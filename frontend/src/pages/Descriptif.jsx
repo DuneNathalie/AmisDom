@@ -2,12 +2,13 @@ import React, { useState,  useEffect} from "react";
 import {useParams} from 'react-router-dom'
 import axios from "axios";
 //import Bandeau from "../components/Bandeau.jsx";
+import Adopte from "../components/Adopte";
 import "../styles/Descriptif.css";
 
 const Descriptif = () => {
 const [descrip, setDescrip] = useState([]);
 const [delAnimaux, setDelAnimaux] = useState([]);
-//const [targetId, setTargetId] = useState(null);
+const [confirmation, setConfirmation] = useState(false);
 const {id} = useParams();
 
 
@@ -60,7 +61,11 @@ const deleteanimaux = () => {
                 );
                 })}
             </div>
-            <button className="adopte" type="submit" onClick={() => { deleteanimaux();}} >ADOPTE</button>
+            <button className="adopte" type="submit" onClick={() => {
+                deleteanimaux();
+                setConfirmation(true)
+            }} >ADOPTE</button>
+            {confirmation && <Adopte />}
             </div>
         </div>
 )}
