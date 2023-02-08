@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ReactConfetti from "react-confetti";
-import "../styles/Confetti.css"
+import "../styles/adoption/Confetti.css"
 
 const Confetti = () => {
     return (

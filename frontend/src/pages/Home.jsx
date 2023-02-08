@@ -4,7 +4,7 @@ import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../styles/Home.css";
+import "../styles/home/Home.css";
 
 const Home = () => {
 const [cardAnimaux, setCardAnimaux] = useState([]);

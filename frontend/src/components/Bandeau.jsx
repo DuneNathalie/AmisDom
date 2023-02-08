@@ -12,26 +12,26 @@ const bandeau = () => {
         <div className='bandeau'> 
             <div className='bienvenue'>
             <img className="logo" src={mimi} alt="logo"/>
-                <h1>Bienvenue à AmisDom</h1>
+                <p>Bienvenue à AmisDom</p>
             </div> 
             <div className="toutlien">
-            <div className='acceuil'>  
+            <div className='clic'>  
+                    <img className="vecto" src={chien} alt="logo"/>
                 <Link className='liens' to="/Home">
                     <div className="lien">Adopte un AmisDom</div>
                 </Link>
-                    <img className="vecto" src={chien} alt="logo"/>
             </div>
-            <div className='aAdopter'>  
+            <div className='clic'>  
                 <Link className='liens' to="/CreationAdoption">
                     <div className="lien">Ajoute un AmisDom</div>
                 </Link>
                     <img className="vecto" src={chat} alt="logo"/>
             </div>
-            <div className='deconnection'>  
+            <div className='clic'>  
+                    <img className="vecto" src={hamster} alt="logo"/>
                 <Link className='liens' to="/">
                     <div className="lien">Pour te deconnecter</div>
                 </Link>
-                    <img className="vecto" src={hamster} alt="logo"/>
             </div>
             </div>
             </div>
