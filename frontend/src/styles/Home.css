@@ -1,7 +1,8 @@
 .home {
     display: flex;
-    background-color:var(--vert);
-    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .bando {
     display: flex;
@@ -17,11 +18,16 @@
 }
 
 .cadre {
+    background-color: var(--vert);
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vh;
+    top: 0;
+    z-index: 4;
+    width: 80%;
 }
 
 .titre {
@@ -38,10 +44,9 @@
     align-items: center;
     justify-content: center;
     gap: 4vh;
-    margin-right: 1.5%;
-    overflow: scroll;
-    height: 500px;
-    margin-top:2.5vh;
+    padding-top: 27vh;
+    margin: auto;
+    /*width: 70vw;*/
     /*box-shadow: 0px 5px 10px 0px rgba(212, 234, 225, 1);*/
 }
 .bar {

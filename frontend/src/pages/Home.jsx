@@ -40,13 +40,13 @@ useEffect(() => {
 
     return (
         <div className='home'>
-        <div className="leTout">
                 <div className="cadre">
                     <div className="titre">Trouve ton AmisDom</div>
                     <div className="filtre">
                     <Search datas={type} handleSearchTerm= {handleSearchTerm} />
                     </div>
                 </div>
+        
                     <div className='toCarte'>
                         {cardAnimaux
                         .filter((el) => {
@@ -61,13 +61,13 @@ useEffect(() => {
                                 <div className="bar">
                                 <Link to={`/Descriptif/${val.id_animaux}`} className="link" key={val.id_animaux} >
                                     <Carte profil={val}/>
-                                    </Link>
+                                </Link>
                                     </div>
                                     );
                         })}         
                     </div>
         </div>
-        </div>
+
         )}
 
 

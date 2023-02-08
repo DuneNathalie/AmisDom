@@ -4,11 +4,23 @@ import chien from "../assets/chien.jpg";
 import chat from "../assets/chat.jpg";
 import hamster from "../assets/hamster.jpg";
 import lapin from "../assets/lapin.jpg";
+import { Link } from "react-router-dom";
+import mimi from "./../assets/mimiLogo.jpg";
 
 const bandeau = () => {
     return (
-        <div className='letout'>
-            <div className='amis'>
+        <div className='letout'>     
+        <div className='header'>
+            <div className='enc'>
+            <div className='leLien'>
+            <Link className='liens' to="/">
+                <div className="lien">Acceuil</div>
+            <img className="logo" src={mimi} alt="logo"/>
+            </Link>
+            </div>
+            </div>
+        </div>
+      <div className='amis'>
                 AmisDom à adopter
             </div>
             <div className='anim'>

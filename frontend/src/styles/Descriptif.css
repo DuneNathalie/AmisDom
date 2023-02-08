@@ -10,8 +10,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 3vw 3vw 5vh 3vw;
+    justify-content: center;
+    margin: 1vw 3vw 5vh 3vw;
     gap: 4vh;
 }
 
@@ -90,4 +90,7 @@
 .certif {
     display: flex;
     justify-content: center;
+}
+.linkAdopte {
+    width: 100%;
 }
