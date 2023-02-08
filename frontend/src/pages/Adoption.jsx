@@ -23,7 +23,7 @@ const Adoption = () => {
                         <br/>
                         <p>Nous vous souhaitons plein de bonheur</p>
                         </div>
-                    <Link to="/">
+                    <Link to="/Home">
                         <button className="fermer" type="submit" >Fermer</button>
                     </Link>
                 </div>

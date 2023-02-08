@@ -6,8 +6,7 @@
     justify-content: center;
     gap: 10px;
     height: 60px;
-    background-color:  rgba(255, 215, 215, 1);;
-    color: aliceblue;
+    color: rgb(133 184 163/ 100%);
     font-family: var(--police);
     z-index: 999;
     position: relative;
@@ -18,8 +17,9 @@
   .firts {
     font-size: 1rem;
     font-family: var(--police);
-    color:var(--roseFonce)
+    color:rgb(133 184 163/ 100%);
   }
+
   .coordonnées {
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
     margin-top: 5px;
   }
   .logos {
-    color: var(--roseFonce);
+    color: rgb(133 184 163/ 100%);
   }
   .logoBis {
     display: flex;

@@ -56,7 +56,6 @@
 .pin{
     border-radius: 25px;
     width: 360px;
-    box-shadow: var(--boxShadow);
     margin: auto;
 }
 
@@ -74,8 +73,7 @@
     height: 65px;
     border-radius: 5px;
     border: none;
-    background-color: rgba(255, 215, 215, 1);
-    box-shadow: var(--boxShadow);
+    background-color: var(--roseFonce);
     color: white;
     font-weight:700;
     font-size: 3vh;

@@ -29,7 +29,6 @@
 .tete {
     width: 130px;
     border-radius: 50%;
-    box-shadow: var(--boxShadow);
     font-size: 5vh;
 }
 
