@@ -17,9 +17,9 @@ const getAllType = async (req, res) => {
 const deleteAnimaux = (id) => {
   return datasource.query ("DELETE FROM animaux WHERE id_animaux=?", [id]);
 }
-/*const createAnimaux = () => {
+const createAnimaux = () => {
   return datasource.query ("INSERT INTO ${anim} (type, name, gabarit, age, descriptif, image) VALUE (? ,? ,? ,?, ?, ?), [type, name, gabarit, age, description, image]");
-}*/
+}
 
 const updateAnimaux = () => {
   return datasource.query ("UPDATE ${anim} SET type=?, name=?, gabarit=?, age=?, descriptif=?, image=?, animauxId=?, WHERE id=?", [type, name, gabarit, age, descriptif, image, animauxId, id]);
@@ -30,7 +30,7 @@ module.exports = {
   getAllanimaux,
   getByIdanimaux,
   getAllType,
-  /*createAnimaux,*/
+  createAnimaux,
   updateAnimaux,
   deleteAnimaux,
 }

@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import "../styles/Adoption.css";
+import "../styles/adoption/Adoption.css";
 import {Link} from "react-router-dom";
 import Confetti from '../components/Confetti';
 import Amis from "../assets/mimiLogo.jpg";
