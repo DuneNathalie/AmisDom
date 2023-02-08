@@ -15,19 +15,19 @@ const bandeau = () => {
                 <h1>Bienvenue à AmisDom</h1>
             </div> 
             <div className="toutlien">
-            <div className='acceuil'>  
+            <div className='clic'>  
                 <Link className='liens' to="/Home">
                     <div className="lien">Adopte un AmisDom</div>
                 </Link>
                     <img className="vecto" src={chien} alt="logo"/>
             </div>
-            <div className='aAdopter'>  
+            <div className='clic'>  
                 <Link className='liens' to="/CreationAdoption">
                     <div className="lien">Ajoute un AmisDom</div>
                 </Link>
                     <img className="vecto" src={chat} alt="logo"/>
             </div>
-            <div className='deconnection'>  
+            <div className='dclic'>  
                 <Link className='liens' to="/">
                     <div className="lien">Pour te deconnecter</div>
                 </Link>
