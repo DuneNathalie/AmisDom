@@ -1,8 +1,7 @@
 import React, { useState,  useEffect} from "react";
 import {useParams} from 'react-router-dom'
 import axios from "axios";
-//import Bandeau from "../components/Bandeau.jsx";
-import Adopte from "../components/Adopte";
+import { Link } from "react-router-dom";
 import "../styles/Descriptif.css";
 
 const Descriptif = () => {
@@ -61,13 +60,11 @@ const deleteanimaux = () => {
                 );
                 })}
             </div>
+            <Link to="/Adoption">
             <button className="adopte" type="submit" onClick={() => {
                 deleteanimaux();
-                setConfirmation(true)
             }} >ADOPTE</button>
-            </div>
-            <div className="certif">
-            {confirmation && <Adopte />}
+            </Link>
             </div>
         </div>
 )}

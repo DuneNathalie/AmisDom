@@ -10,7 +10,7 @@ function Footer() {
         <footer className="footer">
             <div className='coordonnées'>
             <div className='nameNath'>
-                <p className='firts'>Réalisation faite en 2 jours par Nathalie Dune aprés 4 mois et demie de formation</p>
+                <p className='firts'>Réalisaté par Nathalie Dune aprés 4 mois et demie de formation</p>
             </div>
             <div className="logoBis">
                 <Link className="logos" to="//fr-fr.facebook.com/">

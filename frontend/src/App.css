@@ -14,7 +14,7 @@
   --policeBis: "Roboto", sans-serif;
   --policeTrois: "Dancing", sans-serif;
   --borderRadius: 10px;
-  --boxShadow: 0px 5px 10px 0px rgb(0 0 0/ 51%);
+  --boxShadow: 0px 5px 20px rgb(133 184 163/ 0.5);
 }
 
 * {
@@ -25,15 +25,28 @@
   text-decoration: none;
   font-family: var(--police)
 }
+body {
+  background-color: var(--vert);
+}
 .app {
   display: flex;
-  background-color: var(--vert);
+  height: 100vh;
+}
+
+.banhearder {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
+
 .toutHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+  gap:4vh;
+}
+.plein {
   width: 100%;
 }

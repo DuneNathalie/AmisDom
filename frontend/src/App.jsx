@@ -1,9 +1,11 @@
 import { React, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Descriptif from "./pages/Descriptif";
-import Header from "./components/Header";
+import CreationAdoption from "./pages/CreationAdoption";
+import Login from "./pages/Login";
 import Footer from "./components/Footer";
 import Bandeau from "./components/Bandeau";
+import Adoption from "./pages/Adoption"
 import './App.css';
 
 
@@ -14,15 +16,16 @@ function App() {
         <Bandeau />
       </div>
       <div className="toutHeader">
-     <Header />
-     <div className="plein">
      <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Descriptif/:id" element={<Descriptif />} />
+          <Route path="/Adoption" element={<Adoption />} />
+          <Route path="/CreationAdoption" element={<CreationAdoption />} />
       </Routes>
-      </div>
       <Footer />
       </div>
+
     </div>
   );
 }
