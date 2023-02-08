@@ -35,9 +35,6 @@ const deleteanimaux = () => {
     return (
         <div className='cadreDescriptif'>
             <div className='presentation'>
-                <div className="titrePres">
-                    Je te présente
-                    </div>
             <div className="test">
                 {descrip
                 .map((val) => {
