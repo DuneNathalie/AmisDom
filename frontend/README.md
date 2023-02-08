@@ -1,6 +1,4 @@
-Projet réalisé pour le checkpoint 4 aprés 4 mois et demie de formation.
 création BDD, backend et frontend.
-Réalisé en moins de 2 jours.
 J'ai continué par la suite à alimenter la BDD afin qu'il y ai plus d'animaux et fini du CSS.
 
 # Getting Started with Create React App
