@@ -37,7 +37,7 @@ const deleteanimaux = () => {
         <div className='cadreDescriptif'>
             <div className='presentation'>
                 <div className="titrePres">
-                    <p>Je te présente</p>
+                    Je te présente
                     </div>
             <div className="test">
                 {descrip
@@ -65,6 +65,8 @@ const deleteanimaux = () => {
                 deleteanimaux();
                 setConfirmation(true)
             }} >ADOPTE</button>
+            </div>
+            <div className="certif">
             {confirmation && <Adopte />}
             </div>
         </div>

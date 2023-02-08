@@ -2,15 +2,15 @@
     background-color: white;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 120%;
     height: 50%;
     border-radius: 15px;
     box-shadow: var(--boxShadow);
 }
 .amis {
     border-radius: 50%;
-    width: 50%;
-    height: auto;
+    width: 70%;
+    margin: 15%;
 }
 
 .cubeTex {
@@ -19,8 +19,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 70%;
-    margin-right: 5vw;
+    gap: 10%;
+    height: 80%;
+    margin: auto;
 }
 .message {
     display: flex;
