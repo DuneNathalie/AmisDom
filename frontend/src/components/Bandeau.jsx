@@ -3,7 +3,6 @@ import "../styles/Bandeau.css";
 import chien from "../assets/chien.jpg";
 import chat from "../assets/chat.jpg";
 import hamster from "../assets/hamster.jpg";
-import lapin from "../assets/lapin.jpg";
 import { Link } from "react-router-dom";
 import mimi from "./../assets/mimiLogo.jpg";
 
@@ -12,7 +11,7 @@ const bandeau = () => {
         <div className='bandeau'> 
             <div className='bienvenue'>
             <img className="logo" src={mimi} alt="logo"/>
-                <p>Bienvenue à AmisDom</p>
+                <p>AmisDom</p>
             </div> 
             <div className="toutlien">
             <div className='clic'>  
