@@ -1,0 +1,87 @@
+.login {
+    display: flex;
+}
+
+.videoChien {
+    width: 50%;
+}
+
+.créerCompte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    margin-top: 0;
+}
+.connectCompte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.amisDom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    font-family: var(--polices);
+    color: var(--violet);
+    height: 20%;
+    margin-top: 0;
+}
+.formCompte {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--boxShadow);
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    gap:3vh;
+    color: var(--rose);
+}
+
+.inplab {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.lab {
+    color: var(--rose);
+    margin: auto;
+}
+
+.seconnecter {
+    cursor: pointer;
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--roseFonce);
+    color: white;
+    font-weight:700;
+    font-size: 1vh;
+    transition: transform 0.3s;
+    margin-top: 3vh;
+}
+.créerLogin {
+    margin-top: 3vh;
+}

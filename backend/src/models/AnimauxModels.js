@@ -1,4 +1,4 @@
-const datasource = require("../datasource");
+const datasource = require("../../database");
 const anim = "animaux";
 
 const getAllanimaux = () => {

@@ -1,3 +1,7 @@
+.centre {
+    display: flex;
+}
+
 .adopteValide {
     display: flex;
     flex-direction: column;

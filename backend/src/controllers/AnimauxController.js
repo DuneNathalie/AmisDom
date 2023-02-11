@@ -1,5 +1,5 @@
 const AnimauxModels = require("../models/AnimauxModels");
-const db = require("../datasource");
+const db = require("../../database");
 
 const getAllanimaux = async (req, res) => {
   const [result] = await db.query("SELECT * FROM animaux");
@@ -54,4 +54,5 @@ module.exports = {
   getByIdanimaux,
   getAllType,
   deleteAnimaux,
+//  createAnimaux
 };

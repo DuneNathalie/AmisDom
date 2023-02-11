@@ -1,14 +1,20 @@
 
 import React, {useState} from 'react';
-import "../styles/adoption/Adoption.css";
 import {Link} from "react-router-dom";
+import Bandeau from "../components/Bandeau";
+import Footer from "../components/Footer";
 import Confetti from '../components/Confetti';
 import Amis from "../assets/mimiLogo.jpg";
+import "../styles/adoption/Adoption.css";
 
 const Adoption = () => {
     const [ferme, setFerme] = useState(false);
 
     return (
+        <div className='centre'>
+         <div className="banhearder">
+        <Bandeau />
+        </div>
     <div className='adopteValide'>
             <div className='conf'>
             <Confetti />
@@ -28,7 +34,9 @@ const Adoption = () => {
                     </Link>
                 </div>
             </div>
-        </div> 
+        </div>
+        <Footer/>
+        </div>
     );
 };
 

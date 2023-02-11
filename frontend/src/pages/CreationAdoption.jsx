@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import axios from "axios";
+import Bandeau from "../components/Bandeau.jsx";
+import Footer from '../components/Footer';
+//import axios from "axios";
+//import { Link } from 'react-router-dom';
 import "../styles/CreationAdoption.css";
 
 
 const CreationAdoption = () => {
-    const [types, setTypes] = useState([]);
+   /* const [types, setTypes] = useState([]);
     const [sexes, setSexes] = useState([]);
     const [selectedType, setSelectedType] = useState("");
     const [selectedSexe, setSelectedSexe] = useState("");
@@ -42,65 +45,36 @@ const CreationAdoption = () => {
                     setImage("");
     })
 
-        };
+        };*/
 
     return (
+      <div className="centrer">
+      <div className="banhearder">
+              <Bandeau />
+          </div>
         <div className='creationAdoption'>
-            <div className='titreCreation'>Ajoute un AmisDom</div>
-
-            <div className='tableau'>
-            <form onSubmit={handleSubmit}>
-      <label>
-        Type:
-        <select value={selectedType} onChange={event => setSelectedType(event.target.value)}>
-    {types.map(type => (
-      <option key={type} value={type}>
-        {type}
-      </option>
-    ))}
-  </select>
-  </label>
-      <br />
-      <label>
-        Nom:
-        <input
-          type="text"
-          value={name}
-          onChange={event => setName(event.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Sexe:
-        <select value={selectedSexe} onChange={event => setSelectedSexe(event.target.value)}>
-    {sexes.map(sexes => (
-      <option key={sexes} value={sexes}>
-        {sexes}
-      </option>
-    ))}
-  </select>
-      </label>
-      <br />
-      <label>
-        Description:
-        <textarea
-          value={descriptif}
-          onChange={event => setDescriptif(event.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Image:
-        <input
-          type="text"
-          value={image}
-          onChange={event => setImage(event.target.value)}
-        />
-      </label>
-      <br />
-      <button className="confir" type="submit">Ajouter</button>
-    </form>
-            </div>
+           <div className='titreCreation'>Ajoute un AmisDom</div>  
+           <form className='formInscrip'>
+                        <div className='divlab'>
+                            <label htmlFor="lab">type</label>
+                                <input className='inplab' type="text" id="ajouterMail" name="ajouterMail"/>
+                        </div>
+                        <div className='divlab'>
+                            <label htmlFor="lab">prenom</label>
+                                <input className='inplab' type="text" id="confirMail" name="confirrMail"/>
+                        </div>
+                        <div className='divlab'>
+                            <label htmlFor="lab">sexe</label>
+                                <input className='inplab' type="text" id="ajouteMpass" name="ajouteMpass"/>
+                        </div>
+                        <div className='divlab'>
+                            <label htmlFor="lab">description</label>
+                                <input className='inplab' type="text" id="ajouteMpass" name="confirMpass"/>
+                        </div>
+                    </form>
+               <button className="confir" type="submit">Ajouter</button>
+               <Footer/>
+        </div>
         </div>
     );
     }

@@ -5,11 +5,17 @@ CREATE DATABASE AmisDom;
 USE AmisDom;
 
 CREATE TABLE IF NOT EXISTS `AmisDom`.`company` (
-  `id_amisDom` INT NOT NULL AUTO_INCREMENT,
+  `id_company` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `phone` VARCHAR(45) NULL,
   `address` VARCHAR(155) NULL,
-  PRIMARY KEY (`id_amisDom`));
+  PRIMARY KEY (`id_company`));
+
+CREATE TABLE IF NOT EXISTS `AmisDom`.`user` (
+  `id_user` INT NOT NULL AUTO_INCREMENT,
+  `mail` VARCHAR(225) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id_user`));
 
 CREATE TABLE IF NOT EXISTS `AmisDom`.`animaux` (
   `id_animaux` INT NOT NULL AUTO_INCREMENT,
@@ -40,3 +46,6 @@ CREATE TABLE IF NOT EXISTS `AmisDom`.`animaux` (
   ("Chat", "Kaï", "mâle", "2", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.Kaï.jpg"),
   ("Chat", "Neige", "femelle", "10", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/chat.neige.jpg"),
   ("Lapin", "tic", "mâle", "1", "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "/assets/lapin.tic.jpg");
+
+INSERT INTO user (mail, password) VALUES
+("nathydune@gmail.com", 1234);
