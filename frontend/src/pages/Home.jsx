@@ -1,5 +1,6 @@
 import React, { useState,  useEffect} from "react";
-//import Bandeau from "../components/Bandeau.jsx";
+import Bandeau from "../components/Bandeau.jsx";
+import Footer from "../components/Footer";
 import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
 import axios from "axios";
@@ -39,7 +40,11 @@ useEffect(() => {
 
 
     return (
-        <div className='home'>
+        <div className="home">
+             <div className="banhearder">
+                <Bandeau />
+            </div>
+        <div className='centre'>
                 <div className="cadre">
                     <div className="titre">Trouve ton AmisDom</div>
                     <div className="filtre">
@@ -66,6 +71,8 @@ useEffect(() => {
                                     );
                         })}         
                     </div>
+            <Footer />
+        </div>
         </div>
 
         )}

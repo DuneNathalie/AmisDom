@@ -2,6 +2,8 @@ import React, { useState,  useEffect} from "react";
 import {useParams} from 'react-router-dom'
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Bandeau from "../components/Bandeau.jsx";
+import Footer from "../components/Footer";
 import "../styles/Descriptif.css";
 
 const Descriptif = () => {
@@ -26,6 +28,7 @@ const deleteanimaux = () => {
     axios
       .delete(`http://localhost:${process.env.REACT_APP_PORT}/animal/${id}`)
       .then(() => {
+        console.log(process.env.REACT_APP_PORT);
         setDelAnimaux("Suppression réussie !");
       })
       .catch(() => {
@@ -33,7 +36,11 @@ const deleteanimaux = () => {
       });
   };
     return (
-        <div className='cadreDescriptif'>
+        <div className="centre">
+        <div className="banhearder">
+                <Bandeau />
+            </div>
+                <div className='cadreDescriptif'>
             <div className='presentation'>
             <div className="test">
                 {descrip
@@ -63,6 +70,8 @@ const deleteanimaux = () => {
             }} >ADOPTE</button>
             </Link>
             </div>
+        </div>
+        <Footer/>
         </div>
 )}
 
