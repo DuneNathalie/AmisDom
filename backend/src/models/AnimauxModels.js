@@ -11,9 +11,20 @@ const getByIdanimaux = (id) => {
 }
 
 const getAllType = async (req, res) => {
-  const [result] = await db.query("SELECT DISTINCT type FROM animaux");
+  const [result] = await datasource.query("SELECT DISTINCT type FROM animaux");
   return res.status(200).send(result);
 };
+
+const postAnimaux = async (req) => {
+  const {type, name, sexe, age, descriptif, image} = req.body;
+
+  const request = await datasource.query(
+    `ÌNSERT INTO animaux(type, name, sexe, age, descriptif, image) VALUES (?,?,?,?,?)`,
+    [type, name, sexe, age, descriptif, image]
+  );
+  return request;
+}
+
 const deleteAnimaux = (id) => {
   return datasource.query ("DELETE FROM animaux WHERE id_animaux=?", [id]);
 }
@@ -30,7 +41,8 @@ module.exports = {
   getAllanimaux,
   getByIdanimaux,
   getAllType,
+  postAnimaux,
   createAnimaux,
-  updateAnimaux,
   deleteAnimaux,
+  updateAnimaux,
 }
