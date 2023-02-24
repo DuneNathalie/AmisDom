@@ -24,13 +24,12 @@ const Login = () => {
                 <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
             </div>
            <div className='connectCompte'>
-                <div className='titre'>
+                <div className='amisDom'>
                     AMISDOM
                 </div>
-
             <div className='formCompte'>
                
-                    <form className='formInscrip'>
+                    <form className='formulaire'>
                         <div className='divlab'>
                             <label className="lab" htmlFor="mail">adresse mail</label>
                                 <input 

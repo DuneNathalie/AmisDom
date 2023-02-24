@@ -61,6 +61,24 @@
     height: 70%;
 }
 
+.seconnecter {
+    cursor: pointer;
+    width: 160px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--roseFonce);
+    color: white;
+    font-weight:700;
+    font-size: 2.5vh;
+    transition: transform 0.3s;
+    margin-top: 3vh;
+    text-decoration: none;
+}
+
+.validerInscription {
+    color:white;
+}
 .créerLogin {
     margin-top: 3vh;
 }
