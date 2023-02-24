@@ -7,7 +7,7 @@ const User = () => {
     return (
         <div className="User">
              <div className="banhearder">
-        <Bandeau />
+                <Bandeau />
             </div>
             <div className="profilUser">
                 <div className="Profil">

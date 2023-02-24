@@ -15,7 +15,7 @@ const CreationLogin = () => {
                     </div>
                 
                     <form className='formInscrip'>
-                    <div className='divlab'>
+                        <div className='divlab'>
                             <label htmlFor="lab">choisi ton pseudo</label>
                                 <input className='inplab' type="text" id="pseudo" name="pseudo"/>
                         </div>
@@ -36,7 +36,7 @@ const CreationLogin = () => {
                                 <input className='inplab' type="text" id="ajouteMpass" name="confirMpass"/>
                         </div>
                     </form>
-                        <button className='validerInscrip'>
+                        <button className='seconnecter'>
                     <Link className='validerInscription' to="/Home">Valide</Link></button>
                 </div>
                 </div>

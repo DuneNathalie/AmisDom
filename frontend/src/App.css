@@ -23,7 +23,8 @@
   margin: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: var(--police)
+  font-family: var(--police);
+  text-decoration: none;
 }
 body {
   background-color: var(--vert);

@@ -1,39 +1,38 @@
 .creationLogin {
     display: flex;
-    width: 100%;
 }
 
-
 .video {
-    background-color: blue;
-    background-clip: border-box;
+    width: 40vw;
+    position: relative;
+    margin: 0;
+}
+.videoChien {
+    width: auto;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
 }
 
 .inscrip {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
-    width: 80%;
-    margin-top: 0;
-}
-
-.inscription {
-    display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 6vh;
     font-family: var(--polices);
     color: var(--violet);
-    height: 20%;
-    margin-top: 0;
+    margin-right: 3vw;
+    width: 50%;
+    gap:3vh;
 }
+
 .formInscrip {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-start;
-    width: 90%;
+    width: 100%;
     margin-top: 0;
     background-color: white;
     border-radius: 25px;
@@ -61,19 +60,7 @@
     width: 80%;
     height: 70%;
 }
-.validerInscrip {
-    cursor: pointer;
-    width: 150px;
-    height: 65px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--roseFonce);
-    color: white;
-    font-weight:700;
-    font-size: 1vh;
-    transition: transform 0.3s;
-    margin-bottom:0;
-}
+
 .créerLogin {
     margin-top: 3vh;
 }

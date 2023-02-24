@@ -2,12 +2,18 @@
     display: flex;
 }
 
-.videoChien {
-    width: 88%;
-}
 .video {
-    width: 50%;
-    height: 100%;
+    width: 40vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+}
+.videoChien {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 .créerCompte {
@@ -17,13 +23,6 @@
     justify-content:flex-start;
     width: 100%;
     margin-top: 0;
-}
-.connectCompte {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;width: 100%;
-
 }
 
 .amisDom {
@@ -68,6 +67,11 @@
     border-radius: 10px;
 }
 
+.lab {
+    color: var(--rose);
+    margin: auto;
+}
+
 .divlab {
     display: flex;
     width: 100%;
@@ -87,6 +91,7 @@
     font-size: 2.5vh;
     transition: transform 0.3s;
     margin-top: 3vh;
+    text-decoration: none;
 }
 .créerLogin {
     margin-top: 3vh;

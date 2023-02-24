@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.banhearder {
+    height: 100vh;
+}
+
 .profilUser{
     display: flex;
     flex-direction: column;
@@ -43,6 +47,7 @@
     margin: 2VW;*/
     width: 100%;
     gap: 2vw;
+    padding: 2vh;;
     margin: auto;
 }
 

@@ -21,7 +21,7 @@ const Login = () => {
     return (
         <div className='login'>
             <div className='video'>
-                <video className="video" src={video} alt="videoChien" autoPlay muted/>
+                <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
             </div>
            <div className='connectCompte'>
                 <div className='titre'>
