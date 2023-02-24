@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Carte.css";
+import "../styles/description/Carte.css";
 
 const Carte = ({profil}) => {
     return (

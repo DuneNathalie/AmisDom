@@ -21,15 +21,16 @@ const Login = () => {
     return (
         <div className='login'>
             <div className='video'>
-                <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
+                <video className="video" src={video} alt="videoChien" autoPlay muted/>
             </div>
            <div className='connectCompte'>
-                <div className='amisDom'>
+                <div className='titre'>
                     AMISDOM
                 </div>
+
             <div className='formCompte'>
                
-                    <form className='formulaire'>
+                    <form className='formInscrip'>
                         <div className='divlab'>
                             <label className="lab" htmlFor="mail">adresse mail</label>
                                 <input 

@@ -10,15 +10,6 @@ const getAllType = async (req, res) => {
   const [result] = await db.query("SELECT DISTINCT type FROM animaux");
   return res.status(200).send(result);
 };
-// Get animaux by id
-/*
-const getByIdanimaux = async (req, res) => {
-  const [result] = await db.query(
-    "SELECT * FROM animaux WHERE id_animaux = ?",
-    [req.params.id]
-  );
-  return res.status(200).send(result);
-};*/
 
 const getByIdanimaux = (req, res) => {
   const id = parseInt(req.params.id, 10);
@@ -48,11 +39,15 @@ const deleteAnimaux = async (req, res) => {
   }
 };
 
+const postAnimaux = async (req, res) => {
+  const result = await structureModels.postStructure(req);
+  return res.json(result);
+}
 
 module.exports = {
   getAllanimaux,
   getByIdanimaux,
   getAllType,
   deleteAnimaux,
-//  createAnimaux
+  postAnimaux,
 };

@@ -1,21 +1,20 @@
 .creationLogin {
     display: flex;
+    width: 100%;
 }
 
+
 .video {
-    width: 100%;
-}
-.videoChien {
-    height: 100%;
-    width: 100%;
+    background-color: blue;
+    background-clip: border-box;
 }
 
 .inscrip {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    width: 100%;
+    justify-content:flex-start;
+    width: 80%;
     margin-top: 0;
 }
 
@@ -30,14 +29,12 @@
     margin-top: 0;
 }
 .formInscrip {
-    width: 70%;
-    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    box-shadow: var(--boxShadow);
+    justify-content:flex-start;
+    width: 90%;
+    margin-top: 0;
     background-color: white;
     border-radius: 25px;
 

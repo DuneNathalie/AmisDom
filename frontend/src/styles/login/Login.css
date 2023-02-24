@@ -3,7 +3,11 @@
 }
 
 .videoChien {
+    width: 88%;
+}
+.video {
     width: 50%;
+    height: 100%;
 }
 
 .créerCompte {
@@ -18,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;width: 100%;
 
 }
 
@@ -33,8 +37,8 @@
     margin-top: 0;
 }
 .formCompte {
-    width: 70%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,28 +64,35 @@
 
 .inplab {
     width: 100%;
-    height: 70%;
+    height: 100%;
     border-radius: 10px;
 }
 
-.lab {
+.divlab {
+    display: flex;
+    width: 100%;
+    height: 8vh;
     color: var(--rose);
-    margin: auto;
 }
 
 .seconnecter {
     cursor: pointer;
-    width: 150px;
-    height: 65px;
+    width: 180px;
+    height: 105px;
     border-radius: 5px;
     border: none;
     background-color: var(--roseFonce);
     color: white;
     font-weight:700;
-    font-size: 1vh;
+    font-size: 2.5vh;
     transition: transform 0.3s;
     margin-top: 3vh;
 }
 .créerLogin {
     margin-top: 3vh;
+    font-size: 2.5vh;
+}
+
+.formInscrip {
+    padding: 2vw;
 }

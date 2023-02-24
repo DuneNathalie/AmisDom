@@ -1,20 +1,24 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import "../styles/login/CreationCompte.css";
+import "../styles/login/CreationLogin.css";
 import video from "../assets/videoChien.mp4";
 
 const CreationLogin = () => {
     return (
         <div className='creationLogin'>
                     <div className='video'>
-                <video className="video" src={video} alt="videoChien" autoPlay muted/>
+                <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
                     </div>
             <div className='inscrip'>
-                    <div className='inscription'>
+                    <div className='titre'>
                         Inscription
                     </div>
                 
                     <form className='formInscrip'>
+                    <div className='divlab'>
+                            <label htmlFor="lab">choisi ton pseudo</label>
+                                <input className='inplab' type="text" id="pseudo" name="pseudo"/>
+                        </div>
                         <div className='divlab'>
                             <label htmlFor="lab">adresse mail</label>
                                 <input className='inplab' type="text" id="ajouterMail" name="ajouterMail"/>

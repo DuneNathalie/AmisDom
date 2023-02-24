@@ -1,4 +1,4 @@
-.centre {
+.cent {
     display:flex;
 }
 .cadreDescriptif {
@@ -13,9 +13,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 1vw 3vw 5vh 3vw;
-    gap: 4vh;
+    justify-content: flex-start;
+    margin: 2vh;
+    height: 100%;
 }
 
 .titrePres {
@@ -81,6 +81,7 @@
     font-weight:700;
     font-size: 3vh;
     transition: transform 0.3s;
+    margin-top: 4vh;
 }
 
 .adopte:hover {
@@ -94,4 +95,15 @@
 }
 .linkAdopte {
     width: 100%;
+}
+
+.chien {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -3vh;
+    height: 20%;
+}
+.chien .vecto {
+    margin-right: 0;
+    margin-bottom: 0;
 }

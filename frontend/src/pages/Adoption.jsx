@@ -1,8 +1,6 @@
-
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import Bandeau from "../components/Bandeau";
-import Footer from "../components/Footer";
 import Confetti from '../components/Confetti';
 import Amis from "../assets/mimiLogo.jpg";
 import "../styles/adoption/Adoption.css";
@@ -11,7 +9,7 @@ const Adoption = () => {
     const [ferme, setFerme] = useState(false);
 
     return (
-        <div className='centre'>
+        <div className='cent'>
          <div className="banhearder">
         <Bandeau />
         </div>
@@ -30,12 +28,11 @@ const Adoption = () => {
                         <p>Nous vous souhaitons plein de bonheur</p>
                         </div>
                     <Link to="/Home">
-                        <button className="fermer" type="submit" >Fermer</button>
+                        <button className="fermer" type="submit" >retour home</button>
                     </Link>
                 </div>
             </div>
         </div>
-        <Footer/>
         </div>
     );
 };
