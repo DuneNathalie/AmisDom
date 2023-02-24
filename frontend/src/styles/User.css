@@ -1,0 +1,66 @@
+.User {
+    display: flex;
+}
+
+.profilUser{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 2vw;
+}
+
+.Profil {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nameProfil {
+    color: var(--violet);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.profilPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    gap: 4vh;
+    margin-bottom: 0;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 20%;
+}
+.change {
+    margin-bottom: 0;
+}
+
+.groupe {
+    display: flex;
+    /*justify-content: center;
+    margin: 2VW;*/
+    width: 100%;
+    gap: 2vw;
+    margin: auto;
+}
+
+.favoris, .groupadopte, .faitAdopte {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*.groupadopte {
+    background-color: white;
+    width: 80%;
+}
+
+.faitAdopte {
+    background-color: white;
+    width: 80%;
+}*/

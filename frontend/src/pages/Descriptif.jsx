@@ -3,8 +3,8 @@ import {useParams} from 'react-router-dom'
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Bandeau from "../components/Bandeau.jsx";
-import Footer from "../components/Footer";
-import "../styles/Descriptif.css";
+import "../styles/description/Descriptif.css";
+import chien from "../assets/chien.png";
 
 const Descriptif = () => {
 const [descrip, setDescrip] = useState([]);
@@ -36,12 +36,15 @@ const deleteanimaux = () => {
       });
   };
     return (
-        <div className="centre">
+        <div className="cent">
         <div className="banhearder">
                 <Bandeau />
             </div>
                 <div className='cadreDescriptif'>
             <div className='presentation'>
+                <div className="chien">
+            <img className="vecto" src={chien} alt="logo"/>
+                </div>
             <div className="test">
                 {descrip
                 .map((val) => {
@@ -71,7 +74,6 @@ const deleteanimaux = () => {
             </Link>
             </div>
         </div>
-        <Footer/>
         </div>
 )}
 

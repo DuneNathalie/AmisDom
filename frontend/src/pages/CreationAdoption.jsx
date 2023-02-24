@@ -1,26 +1,27 @@
 import React, {useState, useEffect} from 'react';
 import Bandeau from "../components/Bandeau.jsx";
-import Footer from '../components/Footer';
-//import axios from "axios";
+//import Footer from '../components/Footer';
+import axios from "axios";
 //import { Link } from 'react-router-dom';
 import "../styles/CreationAdoption.css";
 
 
 const CreationAdoption = () => {
-   /* const [types, setTypes] = useState([]);
+    const [types, setTypes] = useState([]);
     const [sexes, setSexes] = useState([]);
-    const [selectedType, setSelectedType] = useState("");
-    const [selectedSexe, setSelectedSexe] = useState("");
+    //const [selectedType, setSelectedType] = useState("");
+    //const [selectedSexe, setSelectedSexe] = useState("");
     const [name, setName] = useState("");
     const [descriptif, setDescriptif] = useState("");
     const [image, setImage] = useState("");
+    const [age, setAge] = useState("");
 
     useEffect(() => {
         axios
         .get(`http://localhost:${process.env.REACT_APP_PORT}/animal/`)
         .then((res) => {
-            setTypes(res.data.types);
-            setSexes(res.data.sexes);
+            setTypes(res.data.type);
+            setSexes(res.data.sexe);
         })
         .catch((err) => {
             console.error(err);
@@ -31,21 +32,23 @@ const CreationAdoption = () => {
         event.preventDefault();
         axios
             .post(`http://localhost:${import.meta.env.VITE_PORT_BACK}/animal`, {
-                type: selectedType,
+                type: types,
                 name: name,
-                sexe: selectedSexe,
+                sexe: sexes,
                 descriptif: descriptif,
-                image: image
+                image: image,
+                age: age
                 })
                 .then((res)=> {
-                    setSelectedType("");
-                    setSelectedSexe("");
+                    setTypes("");
+                    setSexes("");
                     setName("");
                     setDescriptif("");
                     setImage("");
+                    setAge("");
     })
 
-        };*/
+        }
 
     return (
       <div className="centrer">
@@ -56,24 +59,46 @@ const CreationAdoption = () => {
            <div className='titreCreation'>Ajoute un AmisDom</div>  
            <form className='formInscrip'>
                         <div className='divlab'>
-                            <label htmlFor="lab">type</label>
-                                <input className='inplab' type="text" id="ajouterMail" name="ajouterMail"/>
+                            <label htmlFor="lab">Quel type est-il?</label>
+                                <input className='inplab' type="text" id="ajouterType" name="ajouterType"/>
+                        </div>
+
+
+
+                        <div className='divlab'>
+                            <label htmlFor="lab">Quel on son sexe</label>
+                                <input className='inplab' type="text" id="confirSexe" name="confirSexe"/>
                         </div>
                         <div className='divlab'>
-                            <label htmlFor="lab">prenom</label>
-                                <input className='inplab' type="text" id="confirMail" name="confirrMail"/>
+                            <label htmlFor="lab">Quel age a t'il?</label>
+                                <input 
+                                onChange={(e)=> setAge({age: e.target.value})}
+                                value={age.age}
+                                className='inplab' type="text" id="confirAge" name="confirAge"/>
                         </div>
                         <div className='divlab'>
-                            <label htmlFor="lab">sexe</label>
-                                <input className='inplab' type="text" id="ajouteMpass" name="ajouteMpass"/>
+                            <label htmlFor="lab">Son prénom</label>
+                                <input 
+                                onChange={(e)=> setName({name: e.target.value})}
+                                value={name.name}
+                                className='inplab' type="text" id="ajoutePrenom" name="ajoutePrenom"/>
                         </div>
                         <div className='divlab'>
                             <label htmlFor="lab">description</label>
-                                <input className='inplab' type="text" id="ajouteMpass" name="confirMpass"/>
+                                <input 
+                                onChange={(e)=> setDescriptif({descriptif: e.target.value})}
+                                value={descriptif.descriptif}
+                               className="inplab" type="text" id="confirDescrip" name="confirDescrip"/>
                         </div>
                     </form>
-               <button className="confir" type="submit">Ajouter</button>
-               <Footer/>
+               <button 
+                    className='ajouterAmisDom'
+                    type="submit"
+                    onClick={() => {
+                        handleSubmit();
+                    }}>
+                    Ajouter
+                </button>
         </div>
         </div>
     );
