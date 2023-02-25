@@ -19,7 +19,7 @@
 }
 
 .titrePres {
-    font-size: 4vh;
+    /*font-size: 4vh;*/
     font-weight: bold;
     color: var(--roseFonce);
 }
@@ -40,7 +40,7 @@
 
 .test {
     text-align: center;
-    font-size: 4vh;
+    /*font-size: 4vh;*/
     font-family: var(--police);
     box-shadow: var(--boxShadow);
     background-color: white;
@@ -53,7 +53,7 @@
 }
 
 .info .name {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     margin-bottom: 3vh;
 }
 
@@ -67,7 +67,7 @@
     width: 80%;
     margin: auto;
     text-align: justify;
-    font-size: 1.3rem;
+    /*font-size: 1.3rem;*/
     margin-bottom: 0;
 }
 
@@ -80,7 +80,7 @@
     background-color: var(--roseFonce);
     color: white;
     font-weight:700;
-    font-size: 3vh;
+    /*font-size: 3vh;*/
     transition: transform 0.3s;
     margin-top: 4vh;
 }

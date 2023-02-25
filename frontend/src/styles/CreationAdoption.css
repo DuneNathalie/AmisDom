@@ -15,7 +15,7 @@
 
 .titreCreation {
     text-align: center;
-    font-size: 4vh;
+    /*font-size: 4vh;*/
     color: var(--violet);
     margin-top: 4vh;
     width: 100%;

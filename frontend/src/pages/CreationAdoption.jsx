@@ -56,15 +56,14 @@ const CreationAdoption = () => {
               <Bandeau />
           </div>
         <div className='creationAdoption'>
-           <div className='titreCreation'>Ajoute un AmisDom</div>  
+           <div className='titreCreation'>
+            <h1>AJOUTE UN AMISDOM</h1>
+            </div>  
             <form className='tableau'>
                         <div className='divlab'>
                             <label htmlFor="lab">Quel type est-il?</label>
                                 <input className='inplab' type="text" id="ajouterType" name="ajouterType"/>
                         </div>
-
-
-
                         <div className='divlab'>
                             <label htmlFor="lab">Quel on son sexe</label>
                                 <input className='inplab' type="text" id="confirSexe" name="confirSexe"/>
@@ -84,7 +83,7 @@ const CreationAdoption = () => {
                                 className='inplab' type="text" id="ajoutePrenom" name="ajoutePrenom"/>
                         </div>
                         <div className='divlab'>
-                            <label htmlFor="lab">description</label>
+                            <label htmlFor="lab">Description</label>
                                 <input 
                                 onChange={(e)=> setDescriptif({descriptif: e.target.value})}
                                 value={descriptif.descriptif}

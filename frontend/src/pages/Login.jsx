@@ -26,7 +26,7 @@ const Login = () => {
             </div>
            <div className='inscrip'>
                 <div className='titre'>
-                    AMISDOM
+                    <h1>AMISDOM</h1>
                 </div>
             <div className='formCompte'>
                
@@ -51,12 +51,14 @@ const Login = () => {
                     onClick={() => handelcliclog()}
                     className='seconnecter'>
                         <Link className='seconnecter' to="/Home">SE CONNECTER</Link>
-                </button>
+                    </button>
                     </form>
                 </div>
             <div className='créerLogin'>
                 <Link className='créerLogin' to="/CreationLogin">
-                    <div className="créer">créer un compte</div>
+                    <div className="créer">
+                        <h2>créer un compte</h2>
+                    </div>
                 </Link>
                 </div>
         </div>

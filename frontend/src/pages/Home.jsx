@@ -46,7 +46,9 @@ useEffect(() => {
             </div>
         <div className='centre'>
                 <div className="cadre">
-                    <div className="titre">Trouve ton AmisDom</div>
+                    <div className="titre">
+                        <h1>TROUVE TON AMISDOM</h1>
+                        </div>
                     <div className="filtre">
                     <Search datas={type} handleSearchTerm= {handleSearchTerm} />
                     </div>
