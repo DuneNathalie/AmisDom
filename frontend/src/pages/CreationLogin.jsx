@@ -7,7 +7,7 @@ const CreationLogin = () => {
     return (
         <div className='creationLogin'>
                     <div className='video'>
-                <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
+                <video className="videoChien" src={video} alt="videoChien" autoPlay loop muted/>
                     </div>
             <div className='inscrip'>
                     <div className='titre'>
@@ -37,7 +37,7 @@ const CreationLogin = () => {
                         </div>
                     </form>
                         <button className='seconnecter'>
-                    <Link className='validerInscription' to="/Home">Valide</Link></button>
+                    <Link className='validerInscription' to="/Home">VALIDE</Link></button>
                 </div>
                 </div>
     );

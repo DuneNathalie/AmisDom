@@ -12,14 +12,6 @@ function Footer() {
             <div className='nameNath'>
                 <p className='firts'>Réalisaté par Nathalie Dune aprés 4 mois et demie de formation</p>
             </div>
-            <div className="logoBis">
-                <Link className="logos" to="//fr-fr.facebook.com/">
-                    <AiFillFacebook />
-                </Link>
-                <Link className="logos" to="//www.instagram.com/?hl=fr">
-                    <BsInstagram />
-                </Link>
-            </div>
             </div>
         </footer>
     );

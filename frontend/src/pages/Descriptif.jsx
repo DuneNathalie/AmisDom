@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Bandeau from "../components/Bandeau.jsx";
+import Footer from "../components/Footer.jsx";
 import "../styles/description/Descriptif.css";
 import chien from "../assets/chien.png";
 
@@ -73,6 +74,7 @@ const deleteanimaux = () => {
             }} >ADOPTE</button>
             </Link>
             </div>
+            <Footer/>
         </div>
         </div>
 )}

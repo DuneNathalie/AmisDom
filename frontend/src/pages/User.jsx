@@ -1,5 +1,6 @@
 import react from "react";
 import Bandeau from "../components/Bandeau.jsx";
+import Footer from "../components/Footer.jsx";
 import "../styles/User.css";
 import chat from "../assets/chat.jpg";
 
@@ -28,6 +29,7 @@ const User = () => {
                         <p>mis à l'adoption</p><br/>
                     </div>
                 </div>
+                <Footer/>
             </div>
         </div>
     )

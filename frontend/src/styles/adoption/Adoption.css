@@ -3,12 +3,19 @@
     height: 100%;
 }
 
+.bravo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .adopteValide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
     width: 100%;
     height: 70vh;
 }
@@ -29,12 +36,13 @@
     height: 100%;
     border-radius: 15px;
     box-shadow: var(--boxShadow);
-    margin: 2VH;
+    margin-top: 20vh;
     gap: 3vw;
 }
 
 .cubeImg {
-    width: 35%;    
+    width: 35%;
+    margin-left: 2vw; 
 }
 
 h2 {
@@ -46,14 +54,14 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 19vh;
+    gap: 5vh;
 }
 
-.petexte {
+.petitexte {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2vh;
+    margin-top: 4vw;
 }
 
 .fermer {
@@ -67,6 +75,7 @@ h2 {
     font-weight:700;
     font-size: 2vh;
     transition: transform 0.3s;
+    margin-bottom: 5vh;
 }
 .fermer:hover {
     -ms-transform: scale(1.1); /* IE 9 */

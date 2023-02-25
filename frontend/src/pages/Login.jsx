@@ -21,7 +21,8 @@ const Login = () => {
     return (
         <div className='login'>
             <div className='video'>
-                <video className="videoChien" src={video} alt="videoChien" autoPlay muted/>
+                <video className="videoChien" src={video} alt="videoChien" autoPlay loop muted/>
+                 
             </div>
            <div className='connectCompte'>
                 <div className='amisDom'>
@@ -50,7 +51,7 @@ const Login = () => {
                     <button 
                     onClick={() => handelcliclog()}
                     className='seconnecter'>
-                        <Link className='seconnecter' to="/Home">se connecter</Link>
+                        <Link className='seconnecter' to="/Home">SE CONNECTER</Link>
                 </button>
                 </div>
             <div className='créerLogin'>
