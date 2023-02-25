@@ -27,7 +27,6 @@
 .titre {
     color:  var(--violet);
     font-family: var(--police);
-    font-size: 4vh;
     margin-top: 3vh;
 
 }
@@ -41,7 +40,7 @@
     align-items: center;
     justify-content: center;
     gap: 4vh;
-    padding-top: 4vh;
+    padding-top: 3.5vh;
     margin: auto;
     height: 72vh;
     overflow: scroll;

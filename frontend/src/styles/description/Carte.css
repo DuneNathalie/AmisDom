@@ -29,7 +29,7 @@
 .tete {
     width: 130px;
     border-radius: 50%;
-    font-size: 5vh;
+    /*font-size: 5vh;*/
 }
 
 .descri {
@@ -38,9 +38,9 @@
     align-items: center;
     gap: 2vh;
 }
-.type {
+/*.type {
     font-size: 2vh;
-}
+}*/
 
 .name {
     color: var(--rosePale);

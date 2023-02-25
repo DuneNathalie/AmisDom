@@ -73,7 +73,7 @@ h2 {
     background-color: var(--roseFonce);
     color: white;
     font-weight:700;
-    font-size: 2vh;
+    /*font-size: 2vh;*/
     transition: transform 0.3s;
     margin-bottom: 3vh;
 }

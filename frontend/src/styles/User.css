@@ -22,7 +22,7 @@
 
 .nameProfil {
     color: var(--violet);
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
     font-weight: 900;
 }
 .profilPhoto {
@@ -45,7 +45,7 @@
 .groupe {
     display: flex;
     /*justify-content: center;
-    margin: 2VW;*/
+    margin: 2vw;*/
     width: 100%;
     gap: 2vw;
     padding: 2vh;;
@@ -60,13 +60,3 @@
     border-radius: 10px;
     background-color: white;
 }
-
-/*.groupadopte {
-    background-color: white;
-    width: 80%;
-}
-
-.faitAdopte {
-    background-color: white;
-    width: 80%;
-}*/

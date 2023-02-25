@@ -14,19 +14,21 @@ const User = () => {
                 <div className="Profil">
                     <img className="photo" src={chat} alt="profil"/>
                     <div className="profilPhoto">
-                    <div className="nameProfil">Nathalie</div>
-                    <button className="change" type="button">change ta photo</button> 
+                    <div className="nameProfil">
+                        <h1>Nathalie</h1>
+                    </div>
+                    <button className="change" type="button">Change ta photo</button> 
                     </div>
                 </div>
                 <div className="groupe">
                     <div className="favoris">
-                        <p>favoris</p><br/>
+                        <h2>Favoris</h2><br/>
                     </div>
                     <div className="groupadopte">
-                        <p>Adopté</p><br/>
+                        <h2>Adopté</h2><br/>
                     </div>
                     <div className="faitAdopte">
-                        <p>mis à l'adoption</p><br/>
+                        <h2>Mis à l'adoption</h2><br/>
                     </div>
                 </div>
                 <Footer/>
