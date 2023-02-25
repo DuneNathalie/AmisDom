@@ -1,5 +1,6 @@
 .login {
     display: flex;
+    width: 100%;
 }
 
 .video {
@@ -37,7 +38,7 @@
 }
 .formCompte {
     width: 80%;
-    height: 60%;
+    height: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,30 +47,29 @@
     box-shadow: var(--boxShadow);
     background-color: white;
     border-radius: 25px;
-
+    
 }
 
 .formulaire {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 70%;
+    justify-content:flex-start;
     gap:3vh;
-    color: var(--rose);
+    width: 90%;
+    margin-top: 0;
+    border-radius: 25px;
 }
 
 .inplab {
-    width: 100%;
-    height: 100%;
+    width: 60vw;
+    height: 8vh;
     border-radius: 10px;
 }
 
 .lab {
     color: var(--rose);
-    margin: auto;
+    margin-bottom: 0;
 }
 
 .divlab {
@@ -77,6 +77,7 @@
     width: 100%;
     height: 8vh;
     color: var(--rose);
+    gap:1vw;
 }
 .créerLogin {
     margin-top: 3vh;

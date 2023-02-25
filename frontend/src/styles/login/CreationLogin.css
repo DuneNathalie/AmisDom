@@ -24,7 +24,7 @@
     color: var(--violet);
     margin-right: 3vw;
     width: 50%;
-    gap:3vh;
+    gap:1vh;
 }
 
 .formInscrip {
@@ -36,6 +36,7 @@
     margin-top: 0;
     background-color: white;
     border-radius: 25px;
+    gap:3vh;
 
 }
 
@@ -63,18 +64,17 @@
 
 .seconnecter {
     cursor: pointer;
-    width: 160px;
-    height: 70px;
+    width: 130px;
+    height: 50px;
     border-radius: 5px;
     border: none;
     background-color: var(--roseFonce);
     color: white;
     font-weight:700;
-    font-size: 2.5vh;
+    font-size: 2vh;
     transition: transform 0.3s;
-    margin-top: 3vh;
+    margin-top: 1vh;
     text-decoration: none;
-    transition: transform 0.3s;
 }
 .seconnecter:hover {
     -ms-transform: scale(1.1); /* IE 9 */

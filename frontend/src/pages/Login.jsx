@@ -19,20 +19,20 @@ const Login = () => {
     
 
     return (
-        <div className='login'>
+        <div className='creationLogin'>
             <div className='video'>
                 <video className="videoChien" src={video} alt="videoChien" autoPlay loop muted/>
                  
             </div>
-           <div className='connectCompte'>
-                <div className='amisDom'>
+           <div className='inscrip'>
+                <div className='titre'>
                     AMISDOM
                 </div>
             <div className='formCompte'>
                
                     <form className='formulaire'>
                         <div className='divlab'>
-                            <label className="lab" htmlFor="mail">adresse mail</label>
+                            <label className="lab" htmlFor="mail">Adresse mail</label>
                                 <input 
                                 onChange={(e)=> setUser({...user, mail: e.target.value})}
                                 value={user.mail}
@@ -40,19 +40,19 @@ const Login = () => {
                                 {user.mail}
                         </div>
                         <div className='divlab'>
-                            <label className="lab" htmlFor="mpass">mot de passe</label>
+                            <label className="lab" htmlFor="mpass">Mot de passe</label>
                                 <input
                                  onChange={(e)=> setUser({...user, password: e.target.value})}
                                  value={user.password}
                                 className="inplab" type="text" id="mpass" name="mpasse"/>
                                 {user.password}
                         </div>
-                    </form>
                     <button 
                     onClick={() => handelcliclog()}
                     className='seconnecter'>
                         <Link className='seconnecter' to="/Home">SE CONNECTER</Link>
                 </button>
+                    </form>
                 </div>
             <div className='créerLogin'>
                 <Link className='créerLogin' to="/CreationLogin">

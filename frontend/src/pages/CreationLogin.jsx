@@ -35,9 +35,9 @@ const CreationLogin = () => {
                             <label htmlFor="lab">confirme ton mot de passe</label>
                                 <input className='inplab' type="text" id="ajouteMpass" name="confirMpass"/>
                         </div>
-                    </form>
                         <button className='seconnecter'>
                     <Link className='validerInscription' to="/Home">VALIDE</Link></button>
+                    </form>
                 </div>
                 </div>
     );
