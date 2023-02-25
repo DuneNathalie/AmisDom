@@ -29,27 +29,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vh;
-    width: 50%;
+    gap: 8vh;
+    width: 80%;
     margin: auto;
 }
 
 .clic {
     display: flex;
+    justify-content: flex-end;
+    gap:2vw;
+    width: 100%;
     height: 5vh;
+}
+
+.clic:hover {
+    color: var(--violet);
 
 }
 
 .liens {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 8vh;
-    width: 20vw;
-    color: var(--roseFonce);
-    gap: 2vw;
+    width: 100%;
+    color: rgb(250 207 223);
+    transition: transform 1s;
+    font-weight: bolder;
 }
 
-.iconB {
-    margin-left: 0;
+.liens:hover {
+    color: rgb(151 73 107 );
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1)
+
 }
 

@@ -57,7 +57,7 @@ const CreationAdoption = () => {
           </div>
         <div className='creationAdoption'>
            <div className='titreCreation'>Ajoute un AmisDom</div>  
-            <form className='formInscrip'>
+            <form className='tableau'>
                         <div className='divlab'>
                             <label htmlFor="lab">Quel type est-il?</label>
                                 <input className='inplab' type="text" id="ajouterType" name="ajouterType"/>
@@ -88,7 +88,7 @@ const CreationAdoption = () => {
                                 <input 
                                 onChange={(e)=> setDescriptif({descriptif: e.target.value})}
                                 value={descriptif.descriptif}
-                               className="inplab" type="text" id="confirDescrip" name="confirDescrip"/>
+                               className="inpladescrip" type="text" id="confirDescrip" name="confirDescrip"/>
                         </div>
                     </form>
                <button 

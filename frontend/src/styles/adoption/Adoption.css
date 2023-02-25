@@ -75,7 +75,7 @@ h2 {
     font-weight:700;
     font-size: 2vh;
     transition: transform 0.3s;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 .fermer:hover {
     -ms-transform: scale(1.1); /* IE 9 */
