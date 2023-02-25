@@ -39,12 +39,13 @@
 }
 
 .test {
-    font-size: 4vh;
     text-align: center;
+    font-size: 4vh;
     font-family: var(--police);
     box-shadow: var(--boxShadow);
     background-color: white;
     border-radius: 25px;
+    width: 90%;
 }
 .rass {
     display: flex;
@@ -101,9 +102,10 @@
     display: flex;
     justify-content: flex-end;
     margin-right: -3vh;
-    height: 20%;
+    height: 15%;
 }
 .chien .vecto {
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-right: -25vw;
+    margin-bottom: -2vh;
+    z-index: 10;
 }

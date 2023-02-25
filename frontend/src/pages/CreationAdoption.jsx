@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Bandeau from "../components/Bandeau.jsx";
-//import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 import axios from "axios";
 //import { Link } from 'react-router-dom';
 import "../styles/CreationAdoption.css";
@@ -57,7 +57,7 @@ const CreationAdoption = () => {
           </div>
         <div className='creationAdoption'>
            <div className='titreCreation'>Ajoute un AmisDom</div>  
-           <form className='formInscrip'>
+            <form className='formInscrip'>
                         <div className='divlab'>
                             <label htmlFor="lab">Quel type est-il?</label>
                                 <input className='inplab' type="text" id="ajouterType" name="ajouterType"/>
@@ -92,13 +92,14 @@ const CreationAdoption = () => {
                         </div>
                     </form>
                <button 
-                    className='ajouterAmisDom'
+                    className='seconnecter'
                     type="submit"
                     onClick={() => {
                         handleSubmit();
                     }}>
-                    Ajouter
+                    AJOUTE!
                 </button>
+                <Footer />
         </div>
         </div>
     );

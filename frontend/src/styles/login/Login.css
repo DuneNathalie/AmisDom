@@ -78,21 +78,6 @@
     height: 8vh;
     color: var(--rose);
 }
-
-.seconnecter {
-    cursor: pointer;
-    width: 180px;
-    height: 105px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--roseFonce);
-    color: white;
-    font-weight:700;
-    font-size: 2.5vh;
-    transition: transform 0.3s;
-    margin-top: 3vh;
-    text-decoration: none;
-}
 .créerLogin {
     margin-top: 3vh;
     font-size: 2.5vh;

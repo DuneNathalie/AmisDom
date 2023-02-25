@@ -1,5 +1,6 @@
 import React, { useState,  useEffect} from "react";
 import Bandeau from "../components/Bandeau.jsx";
+import Footer from "../components/Footer.jsx";
 import Search from "../components/Search.jsx";
 import Carte from "../components/Carte.jsx";
 import axios from "axios";
@@ -70,6 +71,7 @@ useEffect(() => {
                                     );
                         })}         
                     </div>
+                    <Footer/>
         </div>
         </div>
 
