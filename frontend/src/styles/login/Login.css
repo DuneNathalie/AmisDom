@@ -62,8 +62,8 @@
 }
 
 .inplab {
-    width: 60vw;
-    height: 8vh;
+    width: 90%;
+    height: 50px;
     border-radius: 10px;
 }
 
@@ -74,10 +74,10 @@
 
 .divlab {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 8vh;
+    height:13vh;
     color: var(--rose);
-    gap:1vw;
 }
 .créerLogin {
     margin-top: 3vh;
@@ -86,4 +86,7 @@
 
 .formInscrip {
     padding: 2vw;
+}
+.logAmi {
+    margin-top:0;
 }

@@ -10,7 +10,7 @@ function Footer() {
         <footer className="footer">
             <div className='coordonnées'>
             <div className='nameNath'>
-                <p className='firts'>Réalisaté par Nathalie Dune aprés 4 mois et demie de formation</p>
+                <p className='firts'>Réalisation de Nathalie Dune</p>
             </div>
             </div>
         </footer>

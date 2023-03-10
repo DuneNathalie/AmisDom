@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `AmisDom`.`animaux` (
   PRIMARY KEY (`id_animaux`));
 
   INSERT INTO animaux (type, name, sexe, age, descriptif, image) VALUES
+  ("Chat", "Inséparables", "mâle et femelle", "2", "Jamais l'un sans l'autre... Tu l'auras compris, il sont inséparables. Très gourmands et joueurs, tu auras une double dose d'amour.", "/assets/chat.inseparables.jpg"),
   ("Hamster", "Broco", "femelle", "5", " Broco est un petit hamster trés gourmant qui aime particulérement les brocolis. Mais il ne dira pas non aux carotte, à de la salade ou tout autre légumes qu'il pourras se mettre sous ses deux petites dents", "/assets/hamster.broco.jpg"),
   ("Chat", "Kiki", "mâle", "5", "Que dire de Kiki mise à par qu'il est vraiment kiki ;-) un chat trés gentil et pépére qui adore s'assoire étalé sur ses grosses patounnes arriére. Il a son petit côté curieux à pouvoir passer des heures à contempler par la fenétre", "/assets/chat.kiki.jpg"),
   ("Hamster", "Gourmand", "mâle", "3", "Tout est dit rien que par son prénom! Gourmand est un vrai petit gourmand qui ne te dira jamais non à la moindre petite ou grosse gourmandise...Mais attention à bien lui faire pratiquer de l'activité réguliérement", "/assets/hamster.gourmand.jpg"),

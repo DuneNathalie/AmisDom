@@ -45,6 +45,7 @@
 .name {
     color: var(--rosePale);
     font-size: 2vh;
+    margin-right: 2vw;
 }
 
 .age {

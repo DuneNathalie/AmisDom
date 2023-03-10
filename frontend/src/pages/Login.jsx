@@ -26,7 +26,7 @@ const Login = () => {
             </div>
            <div className='inscrip'>
                 <div className='titre'>
-                    <h1>AMISDOM</h1>
+                    <h1 className='logAmi'>AMISDOM</h1>
                 </div>
             <div className='formCompte'>
                
@@ -52,14 +52,14 @@ const Login = () => {
                     className='seconnecter'>
                         <Link className='seconnecter' to="/Home">SE CONNECTER</Link>
                     </button>
-                    </form>
-                </div>
             <div className='créerLogin'>
                 <Link className='créerLogin' to="/CreationLogin">
                     <div className="créer">
                         <h2>créer un compte</h2>
                     </div>
                 </Link>
+            </div>
+                    </form>
                 </div>
         </div>
         </div>
