@@ -2,11 +2,16 @@
     display: flex;
 }
 
+.banhearder {
+    height: 100vh;
+}
+
 .profilUser{
     display: flex;
     flex-direction: column;
     width: 75%;
     margin: 2vw;
+    margin-bottom: 0;
 }
 
 .Profil {
@@ -17,7 +22,7 @@
 
 .nameProfil {
     color: var(--violet);
-    font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
     font-weight: 900;
 }
 .profilPhoto {
@@ -40,9 +45,10 @@
 .groupe {
     display: flex;
     /*justify-content: center;
-    margin: 2VW;*/
+    margin: 2vw;*/
     width: 100%;
     gap: 2vw;
+    padding: 2vh;;
     margin: auto;
 }
 
@@ -54,13 +60,3 @@
     border-radius: 10px;
     background-color: white;
 }
-
-/*.groupadopte {
-    background-color: white;
-    width: 80%;
-}
-
-.faitAdopte {
-    background-color: white;
-    width: 80%;
-}*/

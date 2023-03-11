@@ -7,7 +7,7 @@ const Search = ({datas, handleSearchTerm}) => {
         <div>
         <div className='search'>
             <select onChange={handleSearchTerm}>
-                <option value="">Type d'AmisDom</option>
+                <option value="">Nos AmisDom</option>
        
             {datas.map((post) =>{
                 return <option value={post.type} className='search_type'key={post.id}>

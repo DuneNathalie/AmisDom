@@ -10,15 +10,7 @@ function Footer() {
         <footer className="footer">
             <div className='coordonnées'>
             <div className='nameNath'>
-                <p className='firts'>Réalisaté par Nathalie Dune aprés 4 mois et demie de formation</p>
-            </div>
-            <div className="logoBis">
-                <Link className="logos" to="//fr-fr.facebook.com/">
-                    <AiFillFacebook />
-                </Link>
-                <Link className="logos" to="//www.instagram.com/?hl=fr">
-                    <BsInstagram />
-                </Link>
+                <p className='firts'>Réalisation de Nathalie Dune</p>
             </div>
             </div>
         </footer>

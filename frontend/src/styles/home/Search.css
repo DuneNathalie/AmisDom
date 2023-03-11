@@ -13,4 +13,5 @@ select {
     border-radius: 10px;
     border: none;
     box-shadow: var(--boxShadow);
+    padding-left: 2vw;
 }

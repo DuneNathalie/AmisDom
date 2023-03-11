@@ -19,7 +19,7 @@
 }
 
 .titrePres {
-    font-size: 4vh;
+    /*font-size: 4vh;*/
     font-weight: bold;
     color: var(--roseFonce);
 }
@@ -39,12 +39,13 @@
 }
 
 .test {
-    font-size: 4vh;
     text-align: center;
+    /*font-size: 4vh;*/
     font-family: var(--police);
     box-shadow: var(--boxShadow);
     background-color: white;
     border-radius: 25px;
+    width: 90%;
 }
 .rass {
     display: flex;
@@ -52,7 +53,7 @@
 }
 
 .info .name {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     margin-bottom: 3vh;
 }
 
@@ -66,7 +67,7 @@
     width: 80%;
     margin: auto;
     text-align: justify;
-    font-size: 1.3rem;
+    /*font-size: 1.3rem;*/
     margin-bottom: 0;
 }
 
@@ -79,7 +80,7 @@
     background-color: var(--roseFonce);
     color: white;
     font-weight:700;
-    font-size: 3vh;
+    /*font-size: 3vh;*/
     transition: transform 0.3s;
     margin-top: 4vh;
 }
@@ -101,9 +102,10 @@
     display: flex;
     justify-content: flex-end;
     margin-right: -3vh;
-    height: 20%;
+    height: 15%;
 }
 .chien .vecto {
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-right: -25vw;
+    margin-bottom: -2vh;
+    z-index: 10;
 }

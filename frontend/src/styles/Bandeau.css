@@ -4,9 +4,9 @@
     text-align: center;
     align-items: center;
     background-color: white;
-    color: white;
-    height: 100%;
+    color: var(--roseFonce);
     width: 350px;
+    height: 100%;
 }
 
 .bienvenue {
@@ -15,8 +15,10 @@
     align-items: center;
     height: 110px;
     width: 100%;
-    font-size: 3vh;
+    /*font-size: 3vh;*/
     font-weight: bold;
+    gap:2vw;
+    padding: 1vh;
 }
 
 
@@ -29,31 +31,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 10vh
-}
-
-.acceuil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4vh;
+    gap: 8vh;
+    width: 80%;
+    margin: auto;
 }
 
 .clic {
     display: flex;
-    justify-content: center;
-    height: 20vh;
-
+    justify-content: flex-end;
+    gap:2vw;
+    width: 100%;
+    height: 5vh;
 }
 
-.lien {
+.liens {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 8vh;
-    color: var(--roseFonce);
+    width: 100%;
+    transition: transform 1s;
+    font-weight: bolder;
+}
+
+.liens:hover {
+    color: rgb(151 73 107 );
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1)
+
 }
 

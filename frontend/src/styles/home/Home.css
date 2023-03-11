@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     margin-top:0;
+    width: 100%;
 }
 
 .banhearder {
@@ -20,13 +21,13 @@
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    margin-bottom: 1vh;
 }
 
 .titre {
     color:  var(--violet);
     font-family: var(--police);
-    font-size: 4vh;
-    margin-top: 4vh;
+    margin-top: 3vh;
 
 }
 .filtre {
@@ -39,13 +40,14 @@
     align-items: center;
     justify-content: center;
     gap: 4vh;
-    padding-top: 5vh;
+    padding-top: 3.5vh;
     margin: auto;
-    height: 65vh;
+    height: 72vh;
     overflow: scroll;
     width: 95%;
-    margin-top: 3vh;
-    /*box-shadow: 0px 5px 10px 0px rgba(212, 234, 225, 1);*/
+    /*margin-top: 3vh;
+    /*box-shadow: 0px 5px 20px rgb(133 184 163/ 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(212, 234, 225, 1);*/
 }
 
 .bar {

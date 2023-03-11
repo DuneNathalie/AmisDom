@@ -19,20 +19,20 @@ const Login = () => {
     
 
     return (
-        <div className='login'>
+        <div className='creationLogin'>
             <div className='video'>
-                <video className="video" src={video} alt="videoChien" autoPlay muted/>
+                <video className="videoChien" src={video} alt="videoChien" autoPlay loop muted/>
+                 
             </div>
-           <div className='connectCompte'>
+           <div className='inscrip'>
                 <div className='titre'>
-                    AMISDOM
+                    <h1 className='logAmi'>AMISDOM</h1>
                 </div>
-
             <div className='formCompte'>
                
-                    <form className='formInscrip'>
+                    <form className='formulaire'>
                         <div className='divlab'>
-                            <label className="lab" htmlFor="mail">adresse mail</label>
+                            <label className="lab" htmlFor="mail">Adresse mail</label>
                                 <input 
                                 onChange={(e)=> setUser({...user, mail: e.target.value})}
                                 value={user.mail}
@@ -40,24 +40,26 @@ const Login = () => {
                                 {user.mail}
                         </div>
                         <div className='divlab'>
-                            <label className="lab" htmlFor="mpass">mot de passe</label>
+                            <label className="lab" htmlFor="mpass">Mot de passe</label>
                                 <input
                                  onChange={(e)=> setUser({...user, password: e.target.value})}
                                  value={user.password}
                                 className="inplab" type="text" id="mpass" name="mpasse"/>
                                 {user.password}
                         </div>
-                    </form>
                     <button 
                     onClick={() => handelcliclog()}
                     className='seconnecter'>
-                        <Link className='seconnecter' to="/Home">se connecter</Link>
-                </button>
-                </div>
+                        <Link className='seconnecter' to="/Home">SE CONNECTER</Link>
+                    </button>
             <div className='créerLogin'>
                 <Link className='créerLogin' to="/CreationLogin">
-                    <div className="créer">créer un compte</div>
+                    <div className="créer">
+                        <h2>créer un compte</h2>
+                    </div>
                 </Link>
+            </div>
+                    </form>
                 </div>
         </div>
         </div>

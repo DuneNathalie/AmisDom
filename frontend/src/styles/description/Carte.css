@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 180px;
-    height: 230px;
+    width: 170px;
+    height: 210px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -29,7 +29,7 @@
 .tete {
     width: 130px;
     border-radius: 50%;
-    font-size: 5vh;
+    /*font-size: 5vh;*/
 }
 
 .descri {
@@ -38,13 +38,14 @@
     align-items: center;
     gap: 2vh;
 }
-.type {
+/*.type {
     font-size: 2vh;
-}
+}*/
 
 .name {
     color: var(--rosePale);
     font-size: 2vh;
+    margin-right: 2vw;
 }
 
 .age {
